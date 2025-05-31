@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KitUp Uni Welcome Booklet</title>
+    <link rel="icon" type="image/png" href="Logo.png" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333; /* Main text color */
+        }
+        .container {
+            width: 85%; /* Slightly wider for better content flow */
+            max-width: 1000px; /* Max width for larger screens */
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        header {
+            background: #343a40; /* Dark grey */
+            color: #fff;
+            padding: 1.5rem 0; /* Increased padding */
+            text-align: center;
+        }
+        header .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.1rem;
+            margin-top: 5px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 25px; /* Increased margin */
+            padding: 12px;
+            background-color: #e9ecef; /* Light grey */
+            border-bottom: 1px solid #dee2e6;
+        }
+        nav button {
+            background-color: #6c757d; /* Medium grey */
+            color: white;
+            border: none;
+            padding: 10px 18px; /* Adjusted padding */
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 0.9rem;
+        }
+        nav button:hover {
+            background-color: #5a6268; /* Darker grey on hover */
+        }
+        nav button.active {
+            background-color: #495057; /* Even darker grey for active */
+            font-weight: bold;
+        }
+        h1, h2, h3, h4 {
+            color: #212529; /* Black for headings */
+        }
+        h1 { text-align: center; margin-bottom: 25px; font-size: 2.2rem; }
+        h2 { border-bottom: 2px solid #dee2e6; padding-bottom: 10px; margin-top: 40px; font-size: 1.8rem;}
+        h3 { margin-top: 30px; font-size: 1.5rem; } /* Increased margin */
+        h4 { font-size: 1.2rem; margin-top: 20px;}
+        ul, ol { /* Added ol for consistent styling */
+            list-style-type: disc;
+            padding-left: 25px; /* Increased padding */
+            margin-bottom: 15px;
+        }
+        ul ul, ol ol {
+            list-style-type: circle;
+            margin-top: 5px;
+        }
+        li {
+            margin-bottom: 8px; /* Spacing for list items */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dee2e6; /* Lighter border */
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa; /* Very light grey for table headers */
+            font-weight: bold;
+            color: #495057;
+        }
+        .qr-code-placeholder, .map-image-placeholder, .logo-placeholder {
+            display: block;
+            margin: 25px auto; /* Increased margin */
+            max-width: 180px; /* Slightly smaller */
+            height: auto;
+            border: 2px dashed #6c757d; /* Grey dashed border */
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #6c757d;
+            font-style: italic;
+            border-radius: 5px;
+        }
+        .campus-map-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .campus-map-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .pro-tips {
+            background-color: #e7f3ff; /* Light blue */
+            border-left: 5px solid #007bff; /* Blue accent */
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 5px;
+        }
+        .important-note {
+            background-color: #fff3cd; /* Light yellow */
+            border-left: 5px solid #ffc107; /* Amber accent */
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .section {
+            margin-bottom: 45px; /* Increased margin */
+            padding: 30px; /* Increased padding */
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.07); /* Slightly more pronounced shadow */
+        }
+        a {
+            color: #007bff; /* Standard link blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 25px; /* Increased padding */
+            margin-top: 35px;
+            background-color: #343a40; /* Dark grey */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-image: url('bg.png'); background-size: cover; background-position: center;">
+        <div class="logo" data-translate="headerTitle" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-weight: bold;">KitUp</div>
+        <p data-translate="headerSubtitle" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-weight: bold;">UNBOX YOUR WELCOME</p>
+    </header>
+
+    <nav id="languageSwitcher">
+        <button onclick="switchLanguage('en')" data-translate="navEnglish" class="active">English</button>
+        <button onclick="switchLanguage('es')" data-translate="navSpanish">Español</button>
+        <button onclick="switchLanguage('fr')" data-translate="navFrench">Français</button>
+        <button onclick="switchLanguage('zh')" data-translate="navChinese">中文</button>
+    </nav>
+
+    <div class="container">
+
+        <div class="section toc" id="page2Content">
+            <div class="campus-map-container">
+                <img src="Logo.png" />
+            </div>
+            
+            <h2 data-translate="tocTitle">Table of Contents</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-translate="tocHeaderContent">Content</th>
+                        <th data-translate="tocHeaderPages">Pages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-translate="tocItem1">New Student Year-Round Checklist</td><td data-translate="tocItem1Pages">2-4</td></tr>
+                    <tr><td data-translate="tocItem2">New-Student Onboarding Checklist</td><td data-translate="tocItem2Pages">5-6</td></tr>
+                    <tr><td data-translate="tocItem3">Emergency Contacts & Support Services</td><td data-translate="tocItem3Pages">7-8</td></tr>
+                    <tr><td data-translate="tocItem4">Course Selection Guide</td><td data-translate="tocItem4Pages">9-10</td></tr>
+                    <tr><td data-translate="tocItem5">AT HOP Card & Tertiary Concession</td><td data-translate="tocItem5Pages">11-16</td></tr>
+                    <tr><td data-translate="tocItem6">Setting Up an IRD Number</td><td data-translate="tocItem6Pages">17-20</td></tr>
+                    <tr><td data-translate="tocItem7">Opening a Bank Account</td><td data-translate="tocItem7Pages">21-22</td></tr>
+                    <tr><td data-translate="tocItem8">Creating a RealMe Account</td><td data-translate="tocItem8Pages">23-24</td></tr>
+                    <tr><td data-translate="tocItem9">Campus Maps & Parking</td><td data-translate="tocItem9Pages">25-30</td></tr>
+                    <tr><td data-translate="tocItem10">Printer Locations & Printing Guide</td><td data-translate="tocItem10Pages">31-32</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" id="accommodationSupport">
+             <h2 data-translate="accommodationSupportTitle">Accommodation Support</h2>
+             <table>
+                <thead>
+                    <tr>
+                        <th data-translate="accSupportService">Service</th>
+                        <th data-translate="accSupportLocation">Location</th>
+                        <th data-translate="accSupportContact">Contact</th>
+                        <th data-translate="accSupportNotes">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-translate="accUoASupport">UoA Accommodation Support</td>
+                        <td data-translate="accUoALocation">Accommodation Solutions, Office 219A, Level 2, Kate Edger Information Commons, Auckland 1010, New Zealand, 86 Symonds</td>
+                        <td>Email: accom@auckland.ac.nz</td>
+                        <td data-translate="accUoANotes">Office Hours: Monday to Friday, 8.30am - 5.00pm</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="accCarlawPark">Carlaw Park Student Village</td>
+                        <td data-translate="accCarlawParkLocation"></td> <td data-translate="accCarlawParkContact">Email: dsymonds@auckland.ac.nz, Duty Phone: 027 565 0442, Email: cpsv@auckland.ac.nz, Duty Phone: 027 257 2443</td>
+                        <td data-translate="accCarlawParkNotes"></td>
+                    </tr>
+                    <tr>
+                        <td data-translate="accGraftonHall">Grafton Hall</td>
+                        <td data-translate="accGraftonHallLocation"></td>
+                        <td data-translate="accGraftonHallContact">Email: graftonhall@auckland.ac.nz, Duty Phone: 021 478 069</td>
+                        <td data-translate="accGraftonHallNotes"></td>
+                    </tr>
+                    <tr>
+                        <td data-translate="accGraftonFlats">Grafton Student Flats & Goldies Homestead</td>
+                        <td data-translate="accGraftonFlatsLocation"></td>
+                        <td data-translate="accGraftonFlatsContact">Email: graftonstudentflats@auckland.ac.nz, Duty Phone: 021 478 069</td>
+                        <td data-translate="accGraftonFlatsNotes"></td>
+                    </tr>
+                    <tr>
+                        <td data-translate="accORorkeHall">O'Rorke Hall</td>
+                        <td data-translate="accORorkeHallLocation"></td>
+                        <td data-translate="accORorkeHallContact">Email: ororke@auckland.ac.nz, Duty Phone: 021 989 637</td>
+                        <td data-translate="accORorkeHallNotes"></td>
+                    </tr>
+                    <tr>
+                        <td data-translate="accStuartMcCutcheon">Stuart McCutcheon House</td>
+                        <td data-translate="accStuartMcCutcheonLocation"></td>
+                        <td data-translate="accStuartMcCutcheonContact">Email: smh@auckland.ac.nz, Duty Phone: 027 707 9813</td>
+                        <td data-translate="accStuartMcCutcheonNotes"></td>
+                    </tr>
+                    <tr>
+                        <td data-translate="accTeTirohanga">Te Tirohanga o te Tōangaroa</td>
+                        <td data-translate="accTeTirohangaLocation"></td>
+                        <td data-translate="accTeTirohangaContact">Email: ttt@auckland.ac.nz, Duty Phone: 027 233 4612</td>
+                        <td data-translate="accTeTirohangaNotes"></td>
+                    </tr>
+                    <tr>
+                        <td data-translate="accUniHallTowers">University Hall Towers & Waikohanga House</td>
+                        <td data-translate="accUniHallTowersLocation"></td>
+                        <td data-translate="accUniHallTowersContact">Email: universityhall@auckland.ac.nz, Duty Phone: 027 544 2520</td>
+                        <td data-translate="accUniHallTowersNotes"></td>
+                    </tr>
+                    <tr>
+                        <td data-translate="accWaiparuruHall">Waipārūrū Hall</td>
+                        <td data-translate="accWaiparuruHallLocation"></td>
+                        <td data-translate="accWaiparuruHallContact">Email: waiparuruhall@auckland.ac.nz, Duty Phone: 021 989 638</td>
+                        <td data-translate="accWaiparuruHallNotes"></td>
+                    </tr>
+                </tbody>
+             </table>
+        </div>
+
+        <div class="section" id="courseSelection">
+            <h2 data-translate="courseSelectionTitle">Course Selection Guide</h2>
+            <p data-translate="courseSelectionIntro">Course selection is more than a checklist – it’s your first step into an exciting new chapter. Choose what inspires you, trust your instincts, and know that we’re here to support you every step of the way.</p>
+            <h3 data-translate="courseSelectionSubtitle">Step-by-step course-selection guide for Waipapa Taumata Rau | The University of Auckland</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-translate="courseSelPhase">Phase</th>
+                        <th data-translate="courseSelWhatToDo">What to do</th>
+                        <th data-translate="courseSelWhereHow">Where / how</th>
+                        <th data-translate="courseSelWhyMatters">Why it matters</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-translate="courseSelPhase1">1 Get the big picture</td>
+                        <td data-translate="courseSelWhat1">- Download the Degree Planner for your programme/major<br>- Skim faculty prospectus & any “Core Course” handbooks</td>
+                        <td data-translate="courseSelWhere1">Faculty website → “Degree planners” section (The University of Auckland)</td>
+                        <td data-translate="courseSelWhy1">Confirms all compulsory (core) courses and typical sequencing so you don’t overlook requirements.</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="courseSelPhase2">2 Check official regulations</td>
+                        <td data-translate="courseSelWhat2">- Open the Programme Regulations page in the Calendar<br>- Note credit totals, stage (I/II/III/PG) rules, GPA thresholds, and any capstone/placement papers</td>
+                        <td data-translate="courseSelWhere2">Calendar (via sso.auckland or SSO ‘Course advice and information’) (The University of Auckland)</td>
+                        <td data-translate="courseSelWhy2">Regulations override everything else; knowing them avoids late-degree surprises.</td>
+                    </tr>
+                     <tr>
+                        <td data-translate="courseSelPhase3">3 List your core courses first</td>
+                        <td data-translate="courseSelWhat3">From steps 1-2, create a running list of every core paper (course code + points + pre-/co-reqs)</td>
+                        <td data-translate="courseSelWhere3">Simple doc/sheet; you’ll drag these into each semester in Step 5.</td>
+                        <td data-translate="courseSelWhy3">Keeps you focussed on “must-dos” before “nice-tos”.</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="courseSelPhase4">4 Audit prerequisites & sequencing</td>
+                        <td data-translate="courseSelWhat4">For each core paper, open its Course Outline → note prerequisites, co-requisites, and recommended stages.</td>
+                        <td data-translate="courseSelWhere4">SSO “Course outlines” search (The University of Auckland)</td>
+                        <td data-translate="courseSelWhy4">Prevents enrolment blocks caused by missing prereqs.</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="courseSelPhase5">5 Build a multi-semester map</td>
+                        <td data-translate="courseSelWhat5">- Log in to Timetable Planner inside SSO and create sample schedules for the coming year (or whole degree if you like).<br>- Drag core papers into recommended semesters; fill gaps with electives or GenEds.</td>
+                        <td data-translate="courseSelWhere5">SSO → Timetable Planner (The University of Auckland)</td>
+                        <td data-translate="courseSelWhy5">Visualises clashes & workload balance, showing whether everything will actually fit.</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="courseSelPhase6">6 Validate with an adviser</td>
+                        <td data-translate="courseSelWhat6">- Email/visit a Student Hub or faculty course advice session; bring your map.</td>
+                        <td data-translate="courseSelWhere6">AskAuckland → Course advice booking (The University of Auckland)</td>
+                        <td data-translate="courseSelWhy6">Staff can spot hidden rules (e.g., cohort papers) and approve variations.</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="courseSelPhase7">7 Enrol early</td>
+                        <td data-translate="courseSelWhat7">- Use Student Services Online → Enrolment to add courses + associated labs/tutorials.</td>
+                        <td data-translate="courseSelWhere7">SSO → Enrol wizard (The University of Auckland)</td>
+                        <td data-translate="courseSelWhy7">Popular classes fill quickly; core seats can run out.</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="courseSelPhase8">8 Confirm fees & point load</td>
+                        <td data-translate="courseSelWhat8">- Check fee estimate and Enrolment Point Limit to ensure full-time status (usually ≥100 pts/year for undergrads).</td>
+                        <td data-translate="courseSelWhere8">SSO finances tab + enrolment info page (The University of Auckland)</td>
+                        <td data-translate="courseSelWhy8">Maintains visa/loan eligibility and graduation timeline.</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="courseSelPhase9">9 Review just before semester</td>
+                        <td data-translate="courseSelWhat9">- Re-open Timetable Planner one week before classes for room/time changes.<br>- Drop/Swap during the Change of Enrolment window if needed.</td>
+                        <td data-translate="courseSelWhere9">SSO → Timetable view</td>
+                        <td data-translate="courseSelWhy9">Catches last-minute timetable shifts and lets you fix clashes penalty-free.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pro-tips">
+                <h3 data-translate="proTipsTitle">Pro tips</h3>
+                <ul>
+                    <li data-translate="proTip1">Bookmark core-course PDFs (e.g., Business School Core Handbook) for quick reference on policies and learning outcomes (The University of Auckland).</li>
+                    <li data-translate="proTip2">Set calendar reminders for enrolment opening dates and last dates to add/drop without penalty.</li>
+                    <li data-translate="proTip3">Keep a backup elective list—handy when a core paper is full or postponed.</li>
+                </ul>
+            </div>
+            <p data-translate="courseSelectionOutro">With this workflow you’ll always load core subjects first, verify prerequisites early, and lock in a clash-free timetable well before lectures start. Happy studying!</p>
+        </div>
+
+        <div class="section" id="atHopCard">
+            <h2 data-translate="atCardTitle">Everything AT card (public transport)</h2>
+
+            <h3 data-translate="atCardWhatIs">What Is an AT HOP Card?</h3>
+            <p data-translate="atCardWhatIsDesc">An AT HOP card is a reusable, prepaid smart card that allows you to pay for bus, train, and most ferry services in Auckland. It offers discounted fares compared to cash payments and provides convenience for frequent travelers.</p>
+
+            <h3 data-translate="atCardHowToUse">How to Use Your AT HOP Card</h3>
+            <h4 data-translate="atCardTagOn">1. Tag On When You Board</h4>
+            <ul>
+                <li data-translate="atCardTagOnLocate"><strong>Locate the Card Reader:</strong> As you enter the bus, train station, or ferry terminal, find the AT HOP card reader.</li>
+                <li data-translate="atCardTagOnPresent"><strong>Present Your Card:</strong> Hold your HOP card flat against the reader until you hear a beep and see a green light. This indicates a successful tag-on.</li>
+            </ul>
+            <h4 data-translate="atCardTagOff">2. Tag Off When You Exit</h4>
+            <ul>
+                <li data-translate="atCardTagOffLocate"><strong>Find the Exit Reader:</strong> Before leaving the vehicle or station, locate the card reader.</li>
+                <li data-translate="atCardTagOffPresent"><strong>Present Your Card Again:</strong> Hold your card against the reader until you hear a beep and see a green light. This records your exit and ensures you’re charged the correct fare.</li>
+            </ul>
+
+            <div class="important-note">
+                <p><strong data-translate="atCardImportant">Important:</strong> <span data-translate="atCardImportantDesc">Always tag on and off with the same card or device to avoid being charged a default fare.</span></p>
+            </div>
+            <h3 data-translate="atCardRechargeTitle">How to Recharge (Top Up) Your AT HOP Card</h3>
+            <h4 data-translate="atCardOnlineTopUp">Online Top-Up</h4>
+            <ol>
+                <li data-translate="atCardOnlineStep1"><strong>Register Your Card:</strong> Create a MyAT account and register your HOP card.</li>
+                <li data-translate="atCardOnlineStep2"><strong>Log In:</strong> Access your MyAT account.</li>
+                <li data-translate="atCardOnlineStep3"><strong>Select Top-Up:</strong> Choose the card you wish to top up and select 'Top up online'.</li>
+                <li data-translate="atCardOnlineStep4"><strong>Enter Amount and Payment Details:</strong> Specify the amount and provide your credit or debit card information.</li>
+                <li data-translate="atCardOnlineStep5"><strong>Confirm and Activate:</strong> After payment, tag on at any AT HOP reader within 60 days to activate the top-up. <strong data-translate="atCardOnlineNote">Note:</strong> <span data-translate="atCardOnlineNoteDesc">Online top-ups may take up to 1 hour to become available.</span></li>
+            </ol>
+
+            <h4 data-translate="atCardInPersonTopUp">In-Person Top-Up</h4>
+            <ul>
+                <li data-translate="atCardInPersonRetailers"><strong>Retailers:</strong> Visit an AT HOP retailer.</li>
+                <li data-translate="atCardInPersonMachines"><strong>Ticket and Top-Up Machines:</strong> Use machines located at train stations and the Northern Busway.</li>
+                <li data-translate="atCardInPersonCenters"><strong>Customer Service Centers:</strong> Top up at these centers across Auckland. <span data-translate="atCardInPersonTip">Tip: In-person top-ups are available immediately.</span></li>
+            </ul>
+
+            <h4 data-translate="atCardAutoTopUp">Auto Top-Up</h4>
+            <ol>
+                <li data-translate="atCardAutoStep1"><strong>Set Up:</strong> In your MyAT account, choose 'Set up auto top-up'.</li>
+                <li data-translate="atCardAutoStep2"><strong>Configure Settings:</strong> Select a minimum balance threshold and top-up amount.</li>
+                <li data-translate="atCardAutoStep3"><strong>Payment Details:</strong> Provide your credit/debit card or bank account information.</li>
+                <li data-translate="atCardAutoStep4"><strong>Activate:</strong> Tag on at an AT HOP reader within 60 days to activate the auto top-up.</li>
+                <li data-translate="atCardAutoStep5"><strong>Benefit:</strong> Auto top-up ensures you never run out of balance.</li>
+            </ol>
+
+            <h3 data-translate="atCardTertiaryConcessionTitle">Are You Eligible for Tertiary Concession?</h3>
+            <h4 data-translate="atCardStudentCriteria">Student Criteria:</h4>
+            <ul>
+                <li data-translate="atCardCriteriaFullTime">You must be a <strong>full-time student</strong>.</li>
+                <li data-translate="atCardCriteriaNZQA">Enrolled in and attending an NZQA-accredited and approved tertiary course.</li>
+                <li data-translate="atCardCriteriaATApproved">Studying at an AT-approved tertiary provider.</li>
+                <li data-translate="atCardCriteriaFeesFree">Students eligible for fees-free education can also be eligible.</li>
+            </ul>
+
+            <h4 data-translate="atCardApprovedProviderCriteria">AT-Approved Tertiary Provider Criteria:</h4>
+            <ul>
+                <li data-translate="atCardProviderMinEdu">Ministry of Education registered.</li>
+                <li data-translate="atCardProviderNZQA">NZQA registered (for PTEs and TITOs).</li>
+                <li data-translate="atCardProviderOffers">Offers NZQA-approved and accredited tertiary courses.</li>
+                <li data-translate="atCardProviderLocated">Located in the Auckland region.</li>
+                <li data-translate="atCardProviderSigned">Signed a Tertiary Participation agreement with AT.</li>
+                <li data-translate="atCardProviderAppApproved">"App-Approved Providers" are additionally authorised for AT Mobile app verification.</li>
+            </ul>
+
+            <h4 data-translate="atCardDefiningFullTime">Defining “Full-Time Student” (EFTS-based) for Tertiary Concession:</h4>
+            <p data-translate="atCardDefiningFullTimeDesc">AT uses the Tertiary Education Commission’s (TEC) Equivalent Full-Time Student (EFTS) value.</p>
+            <ul>
+                <li data-translate="atCardFullTimeFullYear"><strong>Full-time/Full-year:</strong> Minimum 0.8 EFTS over at least 32 consecutive weeks in a full academic year.</li>
+                <li data-translate="atCardFullTimePartYear"><strong>Full-time/Part-year (Semester):</strong> Minimum 0.4 EFTS over at least 16 consecutive weeks within the academic year.</li>
+                <li data-translate="atCardLimitedFullTime"><strong>Limited Full-time:</strong> Meets StudyLink’s definition and has an approval letter from StudyLink.</li>
+            </ul>
+
+            <h3 data-translate="atCardGettingConcession">Getting Your Tertiary Concession</h3>
+            <p data-translate="atCardGettingConcessionDesc">To load a tertiary concession onto your AT HOP card, your eligibility must be confirmed first:</p>
+            <ol>
+                <li data-translate="atCardStickerTitle">
+                    <strong>AT Tertiary ID Sticker</strong>
+                    <ul class="secondary-list">
+                        <li data-translate="atCardStickerApplied">Applied to your valid tertiary student ID card.</li>
+                        <li data-translate="atCardStickerIssued">Issued by your AT-approved tertiary provider.</li>
+                        <li data-translate="atCardStickerPink"><strong>Pink sticker:</strong> First semester only.</li>
+                        <li data-translate="atCardStickerGreen"><strong>Green sticker:</strong> Second semester or full-year.</li>
+                        <li data-translate="atCardStickerRequires">Requires a fees receipt/certificate from your provider.</li>
+                        <li data-translate="atCardStickerValid">Concession valid until your Student ID or sticker expires (whichever is first).</li>
+                        <li data-translate="atCardStickerFullYear">Full-year sticker (expires March 31 next year) if enrolled for min. 32 consecutive weeks.</li>
+                        <li data-translate="atCardStickerPartYear">Part-year sticker if conditions for one semester are met (e.g., 0.4 EFTS for 16 weeks).</li>
+                         <li data-translate="atCardStickerShowEligible">Show "Eligible" status in the app (only for "App-Approved Providers").</li>
+                        <li data-translate="atCardStickerConcessionUpTo">Concession can be available for up to 3 years, subject to ongoing eligibility revalidation by your provider.</li>
+                        <li data-translate="atCardStickerEnrollmentChanges">If your enrollment changes (e.g., EFTS drops below 0.4 for a semester), your provider notifies AT, and your concession may expire after 2 weeks’ notice.</li>
+                    </ul>
+                </li>
+                <li data-translate="atCardMobileApp"><strong>AT Mobile App</strong></li>
+            </ol>
+            <div class="important-note">
+                <p><strong data-translate="atCardStickerNoteTitle">Note:</strong> <span data-translate="atCardStickerNoteDesc">If you don’t attend an app-approved provider or lack a capable smartphone, you must use the AT Tertiary ID sticker method.</span></p>
+            </div>
+
+            <h3 data-translate="atCardCoverageExclusions">Tertiary Concession Coverage & Exclusions</h3>
+            <h4 data-translate="atCardWhatsIncluded">What’s Included:</h4>
+            <ul>
+                <li data-translate="atCardIncludedDiscount">Discount applies to travel using an AT HOP card loaded with a tertiary concession.</li>
+                <li data-translate="atCardIncludedValidOn">Valid on trains and selected bus and ferry services.</li>
+                <li data-translate="atCardIncludedFares">Fares are at least 20% less than the adult AT HOP single-trip fare.</li>
+                <li data-translate="atCardIncludedAvailable">Available on services operated under contract between AT and public transport operators.</li>
+            </ul>
+            <h4 data-translate="atCardWhoNotEligible">Who is NOT Eligible for Tertiary Concession:</h4>
+            <ul>
+                <li data-translate="atCardNotEligiblePartTime">Part-time students.</li>
+                <li data-translate="atCardNotEligibleYouth">Students in Youth Guarantee, Foundation-Focused Training Opportunities, or similar government-funded courses.</li>
+                <li data-translate="atCardNotEligibleCorrespondence">Those in correspondence study, distance learning, or receiving government funding for transport.</li>
+            </ul>
+            <h4 data-translate="atCardServiceExclusions">Service Exclusions for Tertiary Concession:</h4>
+            <p data-translate="atCardServiceExclusionsDesc">Some services are not covered. AT and operators can add/remove routes from the scheme without notice. If in doubt, check with the operator.</p>
+
+            <div class="important-note">
+                <h4 data-translate="atCardImportantConditions">Important Conditions for Tertiary Concession</h4>
+                <p data-translate="atCardAdultFareIf">You will pay an <strong>adult fare</strong> if you:</p>
+                <ul>
+                    <li data-translate="atCardAdultFareNoConcession">Do not have a tertiary concession loaded on your AT HOP card.</li>
+                    <li data-translate="atCardAdultFareCannotConfirm">Cannot confirm eligibility via the AT Mobile app (if applicable).</li>
+                    <li data-translate="atCardAdultFareNoValidID">Cannot present a valid Tertiary Student ID card with a valid AT Tertiary ID sticker.</li>
+                </ul>
+            </div>
+            <ul>
+                <li data-translate="atCardTermsRevision">Auckland Transport may revise these terms and conditions at any time without notice. Changes take effect immediately once published on their website.</li>
+                <li data-translate="atCardFareSchemesReview">AT regularly reviews its concessionary fare schemes, which may result in changes.</li>
+            </ul>
+
+            <h3 data-translate="atCardFurtherInfo">Further Information for Tertiary Concession</h3>
+            <ul>
+                <li data-translate="atCardFurtherInfoApplication">For the application process, visit the “Tertiary student concession” page on the Auckland Transport website.</li>
+                <li data-translate="atCardFurtherInfoOperators">Some operators like Fullers Ferries (www.fullers.co.nz) and SeaLink Ferries (www.sealink.co.nz) may offer their own tertiary discounts for services not contracted by AT.</li>
+                <li data-translate="atCardFurtherInfoShuttle">Check with your tertiary provider about campus shuttle bus services, which operate independently of this scheme.</li>
+            </ul>
+            <p data-translate="atCardSummaryNote"><em>This information is a summary. For complete and current details, please refer to the official Auckland Transport website.</em></p>
+        </div>
+
+        <div class="section" id="irdNumber">
+            <h2 data-translate="irdTitle">Step By Step Guidance To Set Up IRD Number</h2>
+            <p data-translate="irdIntro">To work part-time or access tax benefits in New Zealand as a student, you’ll need an IRD number (Inland Revenue Department number). This unique identifier is essential for tax purposes, ensuring you’re taxed correctly and can access entitlements. Here’s a comprehensive guide to help you set up your IRD number:</p>
+
+            <h3 data-translate="irdStep1Title">Step 1: Determine Your Application Category</h3>
+            <ol>
+                <li data-translate="irdStep1Cat1"><strong>New Arrival to New Zealand:</strong> If you’ve recently arrived and are within the timeframe specified by your visa, apply as a ‘new arrival’.</li>
+                <li data-translate="irdStep1Cat2"><strong>Living in New Zealand and Not a New Arrival:</strong> If you’ve been in New Zealand beyond your visa’s arrival date or are a New Zealand citizen/resident, use this category.</li>
+                <li data-translate="irdStep1Cat3"><strong>Living Overseas:</strong> If you’re applying before arriving in New Zealand, this is your category.</li>
+            </ol>
+
+            <h3 data-translate="irdStep2Title">Step 2: Gather Required Documents</h3>
+            <p data-translate="irdStep2Desc">Depending on your application category, you’ll need:</p>
+            <ul>
+                <li data-translate="irdStep2Doc1"><strong>Photo Identification:</strong> A valid passport or other approved ID.</li>
+                <li data-translate="irdStep2Doc2"><strong>Proof of Address:</strong> Such as a utility bill or tenancy agreement.</li>
+                <li data-translate="irdStep2Doc3"><strong>Visa Details:</strong> Your Immigration New Zealand application number.</li>
+                <li data-translate="irdStep2Doc4"><strong>Tax Identification Number (TIN):</strong> From your home country, if available.</li>
+                <li data-translate="irdStep2Doc5"><strong>New Zealand Bank Account:</strong> Evidence of a fully functional account or completed customer due diligence (IR997 form).</li>
+            </ul>
+            <p data-translate="irdStep2TranslationNote">Ensure all documents are in English or accompanied by certified translations.</p>
+
+            <h3 data-translate="irdStep3Title">Step 3: Submit Your Application</h3>
+            <ul>
+                <li>
+                    <strong data-translate="irdStep3OnlineTitle">Online Application:</strong> <span data-translate="irdStep3OnlineDesc">Apply through the Inland Revenue website corresponding to your category:</span>
+                    <ul>
+                        <li data-translate="irdStep3OnlineCat1">New Arrival to New Zealand</li>
+                        <li data-translate="irdStep3OnlineCat2">Living in New Zealand and Not a New Arrival</li>
+                        <li data-translate="irdStep3OnlineCat3">Living Overseas</li>
+                    </ul>
+                </li>
+                <li data-translate="irdStep3InPerson"><strong>In-Person Verification:</strong> If applying as ‘living in New Zealand and not a new arrival’, after online submission, visit an AA driver licensing agent within 60 days with your original documents for identity verification.</li>
+                <li data-translate="irdStep3Email"><strong>Email Submission:</strong> If applying from overseas, complete the IR742 form and email it with scanned documents to [email protected]</li>
+            </ul>
+
+            <h3 data-translate="irdStep4Title">Step 4: Receive Your IRD Number</h3>
+            <p data-translate="irdStep4Desc">After successful application and verification:</p>
+            <ul>
+                <li data-translate="irdStep4Processing"><strong>Processing Time:</strong> Typically, within 2 working days if applying online; up to 10 working days by post.</li>
+                <li data-translate="irdStep4Delivery"><strong>Delivery:</strong> You’ll receive your IRD number via email, text, or post, depending on your chosen method.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="bankAccount">
+            <h2 data-translate="bankAccountTitle">Detailed Instructions On How To Open A Bank Account</h2>
+            <p data-translate="bankAccountIntro">Opening a student bank account in New Zealand is a fundamental step in managing your finances during your studies. It enables you to handle tuition payments, receive funds from home, pay for daily expenses, and even earn income from part-time work. Moreover, having a local bank account helps you avoid international transaction fees and simplifies money transfers.</p>
+            <p data-translate="bankAccountGuideDesc">This guide provides detailed, step-by-step instructions to help you open a student bank account in New Zealand, ensuring a smooth and efficient process.</p>
+
+            <h3 data-translate="bankAccountPopularTitle">Popular Student Bank Accounts in New Zealand</h3>
+            <p data-translate="bankAccountPopularDesc">Here are some banks that offer student-friendly accounts:</p>
+            <ul>
+                <li data-translate="bankAccountANZ">ANZ Jumpstart Account</li>
+                <li data-translate="bankAccountWestpac">Westpac International Student Account</li>
+                <li data-translate="bankAccountASB">ASB Tertiary Account/ ASB International Student Account</li>
+                <li data-translate="bankAccountBNZ">BNZ YouMoney Account</li>
+                <li data-translate="bankAccountKiwibank">Kiwibank FreeUp Account</li>
+            </ul>
+
+            <h3 data-translate="bankAccountNeededTitle">What You’ll Need to Open a Student Bank Account</h3>
+            <p data-translate="bankAccountNeededDesc">Most banks in New Zealand require the following documents:</p>
+            <ol>
+                <li data-translate="bankAccountNeededDoc1"><strong>Valid Passport:</strong> Serves as your primary identification.</li>
+                <li data-translate="bankAccountNeededDoc2"><strong>Student Visa:</strong> A visa valid for at least six months is typically required.</li>
+                <li data-translate="bankAccountNeededDoc3"><strong>Proof of Enrolment:</strong> Such as your Offer of Place or Student ID card.</li>
+                <li data-translate="bankAccountNeededDoc4"><strong>Proof of New Zealand Address:</strong> This could be a tenancy agreement, utility bill, or a letter from your institution confirming your residence.</li>
+                <li data-translate="bankAccountNeededDoc5"><strong>Tax Identification Number:</strong> From your home country and/or your New Zealand IRD (Inland Revenue Department) number.</li>
+            </ol>
+
+            <h3 data-translate="bankAccountStepsTitle">Steps to Open a Student Bank Account</h3>
+            <ol>
+                <li>
+                    <strong data-translate="bankAccountStep1Choose">Choose a Bank:</strong> <span data-translate="bankAccountStep1ChooseDesc">Research banks that offer student accounts and compare their features.</span>
+                </li>
+                <li>
+                    <strong data-translate="bankAccountStep2Apply">Apply Online or In-Branch:</strong>
+                    <ul>
+                        <li><strong data-translate="bankAccountStep2OnlineTitle">Online:</strong> <span data-translate="bankAccountStep2OnlineDesc">Some banks allow you to start the application process online, even before arriving in New Zealand.</span></li>
+                        <li><strong data-translate="bankAccountStep2InBranchTitle">In-Branch:</strong> <span data-translate="bankAccountStep2InBranchDesc">Visit a local branch with your documents. It’s advisable to make an appointment in advance.</span></li>
+                    </ul>
+                </li>
+                <li><strong data-translate="bankAccountStep3Complete">Complete the Application:</strong> <span data-translate="bankAccountStep3CompleteDesc">Fill out the necessary forms and provide your documents.</span></li>
+                <li><strong data-translate="bankAccountStep4Activate">Activate Your Account:</strong> <span data-translate="bankAccountStep4ActivateDesc">Once approved, you’ll receive your account details and debit card.</span></li>
+            </ol>
+        </div>
+
+        <div class="section" id="realmeAccount">
+            <h2 data-translate="realmeTitle">How to create a realme Account</h2>
+            <p data-translate="realmeIntro">Go to the link below:</p>
+            <p><a href="https://www.realme.govt.nz/login" target="_blank" data-translate="realmeLinkText">RealMe - Login</a></p>
+
+            <p data-translate="realmeFollowSteps">Follow the steps below to create your RealMe profile:</p>
+            <ol>
+                <li data-translate="realmeStep1">Select Create your RealMe login.</li>
+                <li data-translate="realmeStep2">
+                    Set up your RealMe account by:
+                    <ul>
+                        <li data-translate="realmeStep2Email">providing your email address</li>
+                        <li data-translate="realmeStep2Username">providing a username</li>
+                        <li data-translate="realmeStep2Password">providing a password</li>
+                        <li data-translate="realmeStep2Security">choosing 3 security questions and providing answers</li>
+                        <li data-translate="realmeStep2Captcha">proving you’re a human – enter the characters you see in the picture.</li>
+                    </ul>
+                </li>
+                <li data-translate="realmeStep3">Accept the Terms of use and select Continue.</li>
+                <li data-translate="realmeStep4">Accept the account security disclaimer to create your Immigration Online profile.</li>
+                <li data-translate="realmeStep5">You will be redirected to the Immigration Online page. Enter a display name (this can be different to your RealMe username) and your email address.</li>
+                <li data-translate="realmeStep6">Choose Agree and continue.</li>
+                <li data-translate="realmeStep7">
+                    You will receive 2 emails:
+                    <ul>
+                        <li data-translate="realmeStep7Email1">an email from RealMe to say that your Registration is successful, and</li>
+                        <li data-translate="realmeStep7Email2">an email from Immigration Online to verify your account.</li>
+                    </ul>
+                    <span data-translate="realmeStep7Spam">Check your spam mail if you have not received an email.</span>
+                </li>
+                <li data-translate="realmeStep8">Select Verification Link in the email from Immigration Online to activate your account. Then follow the links provided to verify your account.</li>
+                <li data-translate="realmeStep9">Select View my account and then Visitor Visa to complete the online application form.</li>
+                <li data-translate="realmeStep10">Once you are completed with the online account creating process you may receive an email mentioning you will have to visit the nearest AA center to get you photo taken within 15 days to match with your Realme profile. (Make sure to note the code in the email as you will need it at the AA center as a reference)</li>
+                <li data-translate="realmeStep11">Once the photo is processed, you will receive an email within 10 days that your Realme account is created.</li>
+            </ol>
+        </div>
+
+        <div class="section" id="campusTravel">
+            <h2 data-translate="campusTravelTitle">Inter-Campus Travel</h2>
+            <div class="campus-map-container">
+                <img src="mapoverview.png" />
+            </div>
+
+            <h4 data-translate="campusTravelCityGraftonTitle">City &harr; Grafton:</h4>
+            <p><strong data-translate="walking">Walking:</strong> <span data-translate="campusTravelCityGraftonWalk">Approximately 1.3 KM about 15 minutes.</span></p>
+            <p><strong data-translate="bus">Bus:</strong> <span data-translate="campusTravelCityGraftonBus">InnerLink (INN) provides direct service between the campuses.</span></p>
+
+            <h4 data-translate="campusTravelCityNewmarketTitle">City &harr; Newmarket:</h4>
+            <p><strong data-translate="walking">Walking:</strong> <span data-translate="campusTravelCityNewmarketWalk">Approximately 2 KM, about 30 minutes.</span></p>
+            <p><strong data-translate="bus">Bus:</strong> <span data-translate="campusTravelCityNewmarketBus">Routes 70 and 75 offer direct connections.</span></p>
+
+            <h4 data-translate="campusTravelGraftonNewmarketTitle">Grafton &harr; Newmarket:</h4>
+            <p><strong data-translate="walking">Walking:</strong> <span data-translate="campusTravelGraftonNewmarketWalk">Approximately 1.1 KM, about 20 minutes.</span></p>
+            <p><strong data-translate="bus">Bus:</strong> <span data-translate="campusTravelGraftonNewmarketBus">Routes 70 and 75 provide service between these campuses.</span></p>
+
+            <p data-translate="campusTravelRealTime"><em>For real-time schedules and route planning, consider using the Auckland Transport Journey Planner or the Google MAP App.</em></p>
+
+            <h3 data-translate="campusTravelKeyBusStops">Key Bus Stops</h3>
+            <h4 data-translate="campusTravelCityCampusStops">City Campus (Main Campus)</h4>
+            <ul>
+                <li>
+                    <strong data-translate="campusTravelStopUOA">University of Auckland (Stop ID: 1096):</strong>
+                    <ul class="secondary-list">
+                        <li data-translate="campusTravelStopUOALocation">Location: 12 Grafton Road, adjacent to the City Campus.</li>
+                        <li data-translate="campusTravelStopUOARoutes">Bus Routes: 25B, 76, NX2, OUT, 101, 321, 27H, 27T, 27W, 70, 72X, 931, 933, 939.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong data-translate="campusTravelStopAuckUni">Auckland Universities (Stop ID: 7147):</strong>
+                     <ul class="secondary-list">
+                        <li data-translate="campusTravelStopAuckUniLocation">Location: Symonds Street, directly adjacent to the City Campus.</li>
+                        <li data-translate="campusTravelStopAuckUniRoutes">Bus Routes: 22N, 22R, 24B, 24R, 25L, 27H, 27T, 27W, 70, 82, NX2, 802, 923, 924.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong data-translate="campusTravelStopWaterloo">Waterloo Quadrant (Stop ID: 7144):</strong>
+                    <ul class="secondary-list">
+                        <li data-translate="campusTravelStopWaterlooLocation">Location: Approximately a 5-minute walk from the City Campus.</li>
+                        <li data-translate="campusTravelStopWaterlooRoutes">Bus Routes: 25B, 70, INN, OUT, 27H, 27T, 27W, 321, MEX, 72X, 931, 933, 939, 755.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4 data-translate="campusTravelGraftonCampusStops">Grafton Campus</h4>
+            <ul>
+                <li>
+                    <strong data-translate="campusTravelStopParkRd">Park Road / Auckland City Hospital:</strong>
+                    <ul class="secondary-list">
+                        <li data-translate="campusTravelStopParkRdLocation">Location: Approximately a 3-minute walk from the Grafton Campus.</li>
+                        <li data-translate="campusTravelStopParkRdRoutes">Bus Routes: 30, 309, 321, 75, 866, INN (InnerLink), RBW (Western Rail Bus).</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4 data-translate="campusTravelNewmarketCampusStops">Newmarket Campus</h4>
+            <ul>
+                <li>
+                    <strong data-translate="campusTravelStopMelrose">Melrose Street:</strong>
+                     <ul class="secondary-list">
+                        <li data-translate="campusTravelStopMelroseLocation">Location: Approximately a 2-minute walk from the Newmarket Campus.</li>
+                        <li data-translate="campusTravelStopMelroseRoutes">Bus Routes: INN (InnerLink), 30, 64, 70, 75.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong data-translate="campusTravelStopKhyber">Khyber Pass Road / Mountain Road:</strong>
+                    <ul class="secondary-list">
+                        <li data-translate="campusTravelStopKhyberLocation">Location: Approximately a 4-minute walk from the Newmarket Campus.</li>
+                        <li data-translate="campusTravelStopKhyberRoutes">Bus Routes: N10.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                <strong data-translate="linksTitle">LINKS:</strong><br>
+                <span data-translate="linksAllMaps">1. ALL MAPS:</span> <a href="https://www.auckland.ac.nz/en/on-campus/our-campuses/campus-maps.htm" target="_blank">https://www.auckland.ac.nz/en/on-campus/our-campuses/campus-maps.htm</a><br>
+                <span data-translate="linksParkingInfo">2. PARKING INFORMATION:</span> <a href="https://www.auckland.ac.nz/en/on-campus/our-campuses/parking-information.html" target="_blank">https://www.auckland.ac.nz/en/on-campus/our-campuses/parking-information.html</a>
+            </p>
+        </div>
+
+        <div class="section" id="cityCampus">
+            <h2 data-translate="cityCampusTitle">City Campus Map & Directory</h2>
+            <div class="campus-map-container">
+                <img src="ctmap.png" />
+            </div>
+
+            <div class="directory-section">
+                <h3 data-translate="cityCampusDirectoryTitle">Key Locations / Directory (City Campus)</h3>
+                <p data-translate="cityCampusDirectoryNote"><em>(Note: This is a partial representation. Refer to original PDF for the full list.)</em></p>
+                </div>
+
+            <h3 data-translate="cityCampusParkingTitle">Student Parking at the University of Auckland – Quick Guide</h3>
+            <h4 data-translate="cityCampusParkingOGGB">City Campus (Owen G. Glenn Building - OGGB)</h4>
+            <p><strong data-translate="location">Location:</strong> <span data-translate="cityCampusParkingLocation">Access via Grafton Road (opposite Stanley Street)</span></p>
+            <p><strong data-translate="availability">Availability:</strong> <span data-translate="cityCampusParkingAvailability">5 parking levels, over 1,000 spaces</span></p>
+            <p><strong data-translate="hours">Hours:</strong></p>
+            <ul>
+                <li data-translate="cityCampusParkingHoursWeekdays">Weekdays: 6:30am–11:30pm</li>
+                <li data-translate="cityCampusParkingHoursWeekends">Weekends: 7am–11:00pm</li>
+                <li data-translate="cityCampusParkingHoursClosed">Closed on public holidays</li>
+            </ul>
+            <p><strong data-translate="casualRates">Casual Rates:</strong></p>
+            <ul>
+                <li data-translate="cityCampusParkingRate1">$5/hour (up to 5 hours)</li>
+                <li data-translate="cityCampusParkingRate2">$25 flat rate (5+ hours, Mon–Fri before 4:30pm)</li>
+                <li data-translate="cityCampusParkingRate3">$6 flat rate (after 4:30pm weekdays / all-day weekends)</li>
+            </ul>
+            <p><strong data-translate="payment">Payment:</strong> <span data-translate="cityCampusParkingPayment">Pay at machines near the lifts. Use ticket to exit. EFTPOS accepted (credit card fee 1.9%). $25 lost ticket charge.</span></p>
+
+            <div class="campus-map-container">
+                <img src="resmap.png" />
+                <p data-translate="cityCampusRestaurantsNote">FOOD COURT. The 15-minute walk is in the city center, where there are even more restaurants.</p>
+            </div>
+        </div>
+
+        <div class="section" id="graftonCampus">
+            <h2 data-translate="graftonCampusTitle">Grafton Campus Map & Directory</h2>
+            <div class="campus-map-container">
+                <img src="graftonmap.png" />
+            </div>
+            <div class="directory-section">
+                <h3 data-translate="graftonCampusDirectoryTitle">Directory (Grafton Campus)</h3>
+                <p data-translate="graftonCampusDirectoryNote"><em>(Refer to original PDF for the full list.)</em></p>
+            </div>
+        </div>
+
+        <div class="section" id="newmarketCampus">
+            <h2 data-translate="newmarketCampusTitle">Newmarket Campus Map & Directory</h2>
+            <div class="campus-map-container">
+                <img src="nmmap.png" />
+            </div>
+            <div class="directory-section">
+                <h3 data-translate="newmarketCampusDirectoryTitle">Directory (Newmarket Campus)</h3>
+                 <p data-translate="newmarketCampusDirectoryNote"><em>(Refer to original PDF for the full list.)</em></p>
+            </div>
+        </div>
+
+        <div class="section" id="printingGuide">
+            <h2 data-translate="printerLocationsTitle">Printer Locations</h2>
+            <img src="printers.png" style="max-width: 100%; height: auto;" />
+            <p data-translate="printerLocationsDesc">All-in-one devices capable of printing, photocopying, and scanning are available in study spaces, libraries, and student accommodations across campus.</p>
+
+            <h2 data-translate="printingGuideTitle">Printing at the University of Auckland (For Students)</h2>
+            <h3 data-translate="printingHowToPrint">How to Print</h3>
+            <ul>
+                <li data-translate="printingHowToLogin"><strong>Log in:</strong> Use your Campus Card or student email and password.</li>
+                <li data-translate="printingHowToFunds"><strong>Funds:</strong> Ensure you have a positive balance in your University printing account.</li>
+                <li data-translate="printingHowToLocations"><strong>Locations:</strong> (As mentioned above).</li>
+            </ul>
+
+            <h3 data-translate="printingFromPersonal">Printing from Personal Devices</h3>
+            <h4 data-translate="printingWebPrintService">Web Print Service:</h4>
+            <ol>
+                <li data-translate="printingWebPrintStep1">Go to papercut.auckland.ac.nz and log in.</li>
+                <li data-translate="printingWebPrintStep2">Select 'Web Print' from the menu.</li>
+                <li data-translate="printingWebPrintStep3">Click 'Submit a Job'.</li>
+                <li data-translate="printingWebPrintStep4">Choose 'FollowMe-BW (virtual)' or 'FollowMe-Colour (virtual)' as your printer.</li>
+                <li data-translate="printingWebPrintStep5">Follow the prompts to upload your document and release the print job at any printer by logging in with your Campus Card or credentials.</li>
+            </ol>
+
+            <h3 data-translate="printingCosts">Printing Costs</h3>
+            <ul>
+                <li data-translate="printingCostBW"><strong>Black and White:</strong> A4/A3: $0.10 per page. Double-sided: $0.20 per page.</li>
+                <li data-translate="printingCostColour"><strong>Colour:</strong> A4/A3: $0.20 per page. Double-sided: $0.40 per page.</li>
+            </ul>
+
+            <h3 data-translate="printingAddingFunds">Adding Funds to Your Printing Account</h3>
+            <ul>
+                <li data-translate="printingFundsEpos"><strong>ePOS Stations:</strong> Located on campus, including outside Case Room 3 on Level 0.</li>
+                <li data-translate="printingFundsOnline"><strong>Online Transfer:</strong> Transfer funds from your 'copy balance' to 'print balance' via your NetAccount.</li>
+            </ul>
+        </div>
+
+    </div> <footer>
+        <p data-translate="footerText">&copy; KitUp - University Welcome Kit. Information derived from the provided PDF document.</p>
+    </footer>
+
+    <script id="translations-en" type="application/json">
+    {
+        "headerTitle": "KitUp",
+        "headerSubtitle": "UNBOX YOUR WELCOME",
+        "logoPlaceholder": "[KitUp Logo]",
+        "navEnglish": "English",
+        "navSpanish": "Español",
+        "navFrench": "Français",
+        "navChinese": "中文",
+        "tocTitle": "Table of Contents",
+        "tocHeaderContent": "Content",
+        "tocHeaderPages": "Pages",
+        "tocItem1": "New Student Year-Round Checklist", "tocItem1Pages": "2-4",
+        "tocItem2": "New-Student Onboarding Checklist", "tocItem2Pages": "5-6",
+        "tocItem3": "Emergency Contacts & Support Services", "tocItem3Pages": "7-8",
+        "tocItem4": "Course Selection Guide", "tocItem4Pages": "9-10",
+        "tocItem5": "AT HOP Card & Tertiary Concession", "tocItem5Pages": "11-16",
+        "tocItem6": "Setting Up an IRD Number", "tocItem6Pages": "17-20",
+        "tocItem7": "Opening a Bank Account", "tocItem7Pages": "21-22",
+        "tocItem8": "Creating a RealMe Account", "tocItem8Pages": "23-24",
+        "tocItem9": "Campus Maps & Parking", "tocItem9Pages": "25-30",
+        "tocItem10": "Printer Locations & Printing Guide", "tocItem10Pages": "31-32",
+        "accommodationSupportTitle": "Accommodation Support",
+        "accSupportService": "Service",
+        "accSupportLocation": "Location",
+        "accSupportContact": "Contact",
+        "accSupportNotes": "Notes",
+        "accUoASupport": "UoA Accommodation Support",
+        "accUoALocation": "Accommodation Solutions, Office 219A, Level 2, Kate Edger Information Commons, Auckland 1010, New Zealand, 86 Symonds",
+        "accUoANotes": "Office Hours: Monday to Friday, 8.30am - 5.00pm",
+        "accCarlawPark": "Carlaw Park Student Village", "accCarlawParkLocation": "", "accCarlawParkContact": "Email: dsymonds@auckland.ac.nz, Duty Phone: 027 565 0442, Email: cpsv@auckland.ac.nz, Duty Phone: 027 257 2443", "accCarlawParkNotes": "",
+        "accGraftonHall": "Grafton Hall", "accGraftonHallLocation": "", "accGraftonHallContact": "Email: graftonhall@auckland.ac.nz, Duty Phone: 021 478 069", "accGraftonHallNotes": "",
+        "accGraftonFlats": "Grafton Student Flats & Goldies Homestead", "accGraftonFlatsLocation": "", "accGraftonFlatsContact": "Email: graftonstudentflats@auckland.ac.nz, Duty Phone: 021 478 069", "accGraftonFlatsNotes": "",
+        "accORorkeHall": "O'Rorke Hall", "accORorkeHallLocation": "", "accORorkeHallContact": "Email: ororke@auckland.ac.nz, Duty Phone: 021 989 637", "accORorkeHallNotes": "",
+        "accStuartMcCutcheon": "Stuart McCutcheon House", "accStuartMcCutcheonLocation": "", "accStuartMcCutcheonContact": "Email: smh@auckland.ac.nz, Duty Phone: 027 707 9813", "accStuartMcCutcheonNotes": "",
+        "accTeTirohanga": "Te Tirohanga o te Tōangaroa", "accTeTirohangaLocation": "", "accTeTirohangaContact": "Email: ttt@auckland.ac.nz, Duty Phone: 027 233 4612", "accTeTirohangaNotes": "",
+        "accUniHallTowers": "University Hall Towers & Waikohanga House", "accUniHallTowersLocation": "", "accUniHallTowersContact": "Email: universityhall@auckland.ac.nz, Duty Phone: 027 544 2520", "accUniHallTowersNotes": "",
+        "accWaiparuruHall": "Waipārūrū Hall", "accWaiparuruHallLocation": "", "accWaiparuruHallContact": "Email: waiparuruhall@auckland.ac.nz, Duty Phone: 021 989 638", "accWaiparuruHallNotes": "",
+        "courseSelectionTitle": "Course Selection Guide",
+        "courseSelectionIntro": "Course selection is more than a checklist – it’s your first step into an exciting new chapter. Choose what inspires you, trust your instincts, and know that we’re here to support you every step of the way.",
+        "courseSelectionSubtitle": "Step-by-step course-selection guide for Waipapa Taumata Rau | The University of Auckland",
+        "courseSelPhase": "Phase", "courseSelWhatToDo": "What to do", "courseSelWhereHow": "Where / how", "courseSelWhyMatters": "Why it matters",
+        "courseSelPhase1": "1 Get the big picture", "courseSelWhat1": "- Download the Degree Planner for your programme/major<br>- Skim faculty prospectus & any “Core Course” handbooks", "courseSelWhere1": "Faculty website → “Degree planners” section (The University of Auckland)", "courseSelWhy1": "Confirms all compulsory (core) courses and typical sequencing so you don’t overlook requirements.",
+        "courseSelPhase2": "2 Check official regulations", "courseSelWhat2": "- Open the Programme Regulations page in the Calendar<br>- Note credit totals, stage (I/II/III/PG) rules, GPA thresholds, and any capstone/placement papers", "courseSelWhere2": "Calendar (via sso.auckland or SSO ‘Course advice and information’) (The University of Auckland)", "courseSelWhy2": "Regulations override everything else; knowing them avoids late-degree surprises.",
+        "courseSelPhase3": "3 List your core courses first", "courseSelWhat3": "From steps 1-2, create a running list of every core paper (course code + points + pre-/co-reqs)", "courseSelWhere3": "Simple doc/sheet; you’ll drag these into each semester in Step 5.", "courseSelWhy3": "Keeps you focussed on “must-dos” before “nice-tos”.",
+        "courseSelPhase4": "4 Audit prerequisites & sequencing", "courseSelWhat4": "For each core paper, open its Course Outline → note prerequisites, co-requisites, and recommended stages.", "courseSelWhere4": "SSO “Course outlines” search (The University of Auckland)", "courseSelWhy4": "Prevents enrolment blocks caused by missing prereqs.",
+        "courseSelPhase5": "5 Build a multi-semester map", "courseSelWhat5": "- Log in to Timetable Planner inside SSO and create sample schedules for the coming year (or whole degree if you like).<br>- Drag core papers into recommended semesters; fill gaps with electives or GenEds.", "courseSelWhere5": "SSO → Timetable Planner (The University of Auckland)", "courseSelWhy5": "Visualises clashes & workload balance, showing whether everything will actually fit.",
+        "courseSelPhase6": "6 Validate with an adviser", "courseSelWhat6": "- Email/visit a Student Hub or faculty course advice session; bring your map.", "courseSelWhere6": "AskAuckland → Course advice booking (The University of Auckland)", "courseSelWhy6": "Staff can spot hidden rules (e.g., cohort papers) and approve variations.",
+        "courseSelPhase7": "7 Enrol early", "courseSelWhat7": "- Use Student Services Online → Enrolment to add courses + associated labs/tutorials.", "courseSelWhere7": "SSO → Enrol wizard (The University of Auckland)", "courseSelWhy7": "Popular classes fill quickly; core seats can run out.",
+        "courseSelPhase8": "8 Confirm fees & point load", "courseSelWhat8": "- Check fee estimate and Enrolment Point Limit to ensure full-time status (usually ≥100 pts/year for undergrads).", "courseSelWhere8": "SSO finances tab + enrolment info page (The University of Auckland)", "courseSelWhy8": "Maintains visa/loan eligibility and graduation timeline.",
+        "courseSelPhase9": "9 Review just before semester", "courseSelWhat9": "- Re-open Timetable Planner one week before classes for room/time changes.<br>- Drop/Swap during the Change of Enrolment window if needed.", "courseSelWhere9": "SSO → Timetable view", "courseSelWhy9": "Catches last-minute timetable shifts and lets you fix clashes penalty-free.",
+        "proTipsTitle": "Pro tips",
+        "proTip1": "Bookmark core-course PDFs (e.g., Business School Core Handbook) for quick reference on policies and learning outcomes (The University of Auckland).",
+        "proTip2": "Set calendar reminders for enrolment opening dates and last dates to add/drop without penalty.",
+        "proTip3": "Keep a backup elective list—handy when a core paper is full or postponed.",
+        "courseSelectionOutro": "With this workflow you’ll always load core subjects first, verify prerequisites early, and lock in a clash-free timetable well before lectures start. Happy studying!",
+        "atCardTitle": "Everything AT card (public transport)",
+        "atCardWhatIs": "What Is an AT HOP Card?",
+        "atCardWhatIsDesc": "An AT HOP card is a reusable, prepaid smart card that allows you to pay for bus, train, and most ferry services in Auckland. It offers discounted fares compared to cash payments and provides convenience for frequent travelers.",
+        "atCardHowToUse": "How to Use Your AT HOP Card",
+        "atCardTagOn": "1. Tag On When You Board",
+        "atCardTagOnLocate": "<strong>Locate the Card Reader:</strong> As you enter the bus, train station, or ferry terminal, find the AT HOP card reader.",
+        "atCardTagOnPresent": "<strong>Present Your Card:</strong> Hold your HOP card flat against the reader until you hear a beep and see a green light. This indicates a successful tag-on.",
+        "atCardTagOff": "2. Tag Off When You Exit",
+        "atCardTagOffLocate": "<strong>Find the Exit Reader:</strong> Before leaving the vehicle or station, locate the card reader.",
+        "atCardTagOffPresent": "<strong>Present Your Card Again:</strong> Hold your card against the reader until you hear a beep and see a green light. This records your exit and ensures you’re charged the correct fare.",
+        "atCardImportant": "Important:", "atCardImportantDesc": "Always tag on and off with the same card or device to avoid being charged a default fare.",
+        "atCardRechargeTitle": "How to Recharge (Top Up) Your AT HOP Card",
+        "atCardOnlineTopUp": "Online Top-Up",
+        "atCardOnlineStep1": "<strong>Register Your Card:</strong> Create a MyAT account and register your HOP card.",
+        "atCardOnlineStep2": "<strong>Log In:</strong> Access your MyAT account.",
+        "atCardOnlineStep3": "<strong>Select Top-Up:</strong> Choose the card you wish to top up and select 'Top up online'.",
+        "atCardOnlineStep4": "<strong>Enter Amount and Payment Details:</strong> Specify the amount and provide your credit or debit card information.",
+        "atCardOnlineStep5": "<strong>Confirm and Activate:</strong> After payment, tag on at any AT HOP reader within 60 days to activate the top-up.", "atCardOnlineNote": "Note:", "atCardOnlineNoteDesc": "Online top-ups may take up to 1 hour to become available.",
+        "atCardInPersonTopUp": "In-Person Top-Up",
+        "atCardInPersonRetailers": "<strong>Retailers:</strong> Visit an AT HOP retailer.",
+        "atCardInPersonMachines": "<strong>Ticket and Top-Up Machines:</strong> Use machines located at train stations and the Northern Busway.",
+        "atCardInPersonCenters": "<strong>Customer Service Centers:</strong> Top up at these centers across Auckland.", "atCardInPersonTip": "Tip: In-person top-ups are available immediately.",
+        "atCardAutoTopUp": "Auto Top-Up",
+        "atCardAutoStep1": "<strong>Set Up:</strong> In your MyAT account, choose 'Set up auto top-up'.",
+        "atCardAutoStep2": "<strong>Configure Settings:</strong> Select a minimum balance threshold and top-up amount.",
+        "atCardAutoStep3": "<strong>Payment Details:</strong> Provide your credit/debit card or bank account information.",
+        "atCardAutoStep4": "<strong>Activate:</strong> Tag on at an AT HOP reader within 60 days to activate the auto top-up.",
+        "atCardAutoStep5": "<strong>Benefit:</strong> Auto top-up ensures you never run out of balance.",
+        "atCardTertiaryConcessionTitle": "Are You Eligible for Tertiary Concession?",
+        "atCardStudentCriteria": "Student Criteria:",
+        "atCardCriteriaFullTime": "You must be a <strong>full-time student</strong>.",
+        "atCardCriteriaNZQA": "Enrolled in and attending an NZQA-accredited and approved tertiary course.",
+        "atCardCriteriaATApproved": "Studying at an AT-approved tertiary provider.",
+        "atCardCriteriaFeesFree": "Students eligible for fees-free education can also be eligible.",
+        "atCardApprovedProviderCriteria": "AT-Approved Tertiary Provider Criteria:",
+        "atCardProviderMinEdu": "Ministry of Education registered.",
+        "atCardProviderNZQA": "NZQA registered (for PTEs and TITOs).",
+        "atCardProviderOffers": "Offers NZQA-approved and accredited tertiary courses.",
+        "atCardProviderLocated": "Located in the Auckland region.",
+        "atCardProviderSigned": "Signed a Tertiary Participation agreement with AT.",
+        "atCardProviderAppApproved": "\"App-Approved Providers\" are additionally authorised for AT Mobile app verification.",
+        "atCardDefiningFullTime": "Defining “Full-Time Student” (EFTS-based) for Tertiary Concession:",
+        "atCardDefiningFullTimeDesc": "AT uses the Tertiary Education Commission’s (TEC) Equivalent Full-Time Student (EFTS) value.",
+        "atCardFullTimeFullYear": "<strong>Full-time/Full-year:</strong> Minimum 0.8 EFTS over at least 32 consecutive weeks in a full academic year.",
+        "atCardFullTimePartYear": "<strong>Full-time/Part-year (Semester):</strong> Minimum 0.4 EFTS over at least 16 consecutive weeks within the academic year.",
+        "atCardLimitedFullTime": "<strong>Limited Full-time:</strong> Meets StudyLink’s definition and has an approval letter from StudyLink.",
+        "atCardGettingConcession": "Getting Your Tertiary Concession",
+        "atCardGettingConcessionDesc": "To load a tertiary concession onto your AT HOP card, your eligibility must be confirmed first:",
+        "atCardStickerTitle": "AT Tertiary ID Sticker",
+        "atCardStickerApplied": "Applied to your valid tertiary student ID card.",
+        "atCardStickerIssued": "Issued by your AT-approved tertiary provider.",
+        "atCardStickerPink": "<strong>Pink sticker:</strong> First semester only.",
+        "atCardStickerGreen": "<strong>Green sticker:</strong> Second semester or full-year.",
+        "atCardStickerRequires": "Requires a fees receipt/certificate from your provider.",
+        "atCardStickerValid": "Concession valid until your Student ID or sticker expires (whichever is first).",
+        "atCardStickerFullYear": "Full-year sticker (expires March 31 next year) if enrolled for min. 32 consecutive weeks.",
+        "atCardStickerPartYear": "Part-year sticker if conditions for one semester are met (e.g., 0.4 EFTS for 16 weeks).",
+        "atCardStickerShowEligible": "Show \"Eligible\" status in the app (only for \"App-Approved Providers\").",
+        "atCardStickerConcessionUpTo": "Concession can be available for up to 3 years, subject to ongoing eligibility revalidation by your provider.",
+        "atCardStickerEnrollmentChanges": "If your enrollment changes (e.g., EFTS drops below 0.4 for a semester), your provider notifies AT, and your concession may expire after 2 weeks’ notice.",
+        "atCardMobileApp": "AT Mobile App",
+        "atCardStickerNoteTitle": "Note:",
+        "atCardStickerNoteDesc": "If you don’t attend an app-approved provider or lack a capable smartphone, you must use the AT Tertiary ID sticker method.",
+        "atCardCoverageExclusions": "Tertiary Concession Coverage & Exclusions",
+        "atCardWhatsIncluded": "What’s Included:",
+        "atCardIncludedDiscount": "Discount applies to travel using an AT HOP card loaded with a tertiary concession.",
+        "atCardIncludedValidOn": "Valid on trains and selected bus and ferry services.",
+        "atCardIncludedFares": "Fares are at least 20% less than the adult AT HOP single-trip fare.",
+        "atCardIncludedAvailable": "Available on services operated under contract between AT and public transport operators.",
+        "atCardWhoNotEligible": "Who is NOT Eligible for Tertiary Concession:",
+        "atCardNotEligiblePartTime": "Part-time students.",
+        "atCardNotEligibleYouth": "Students in Youth Guarantee, Foundation-Focused Training Opportunities, or similar government-funded courses.",
+        "atCardNotEligibleCorrespondence": "Those in correspondence study, distance learning, or receiving government funding for transport.",
+        "atCardServiceExclusions": "Service Exclusions for Tertiary Concession:",
+        "atCardServiceExclusionsDesc": "Some services are not covered. AT and operators can add/remove routes from the scheme without notice. If in doubt, check with the operator.",
+        "atCardImportantConditions": "Important Conditions for Tertiary Concession",
+        "atCardAdultFareIf": "You will pay an <strong>adult fare</strong> if you:",
+        "atCardAdultFareNoConcession": "Do not have a tertiary concession loaded on your AT HOP card.",
+        "atCardAdultFareCannotConfirm": "Cannot confirm eligibility via the AT Mobile app (if applicable).",
+        "atCardAdultFareNoValidID": "Cannot present a valid Tertiary Student ID card with a valid AT Tertiary ID sticker.",
+        "atCardTermsRevision": "Auckland Transport may revise these terms and conditions at any time without notice. Changes take effect immediately once published on their website.",
+        "atCardFareSchemesReview": "AT regularly reviews its concessionary fare schemes, which may result in changes.",
+        "atCardFurtherInfo": "Further Information for Tertiary Concession",
+        "atCardFurtherInfoApplication": "For the application process, visit the “Tertiary student concession” page on the Auckland Transport website.",
+        "atCardFurtherInfoOperators": "Some operators like Fullers Ferries (www.fullers.co.nz) and SeaLink Ferries (www.sealink.co.nz) may offer their own tertiary discounts for services not contracted by AT.",
+        "atCardFurtherInfoShuttle": "Check with your tertiary provider about campus shuttle bus services, which operate independently of this scheme.",
+        "atCardSummaryNote": "<em>This information is a summary. For complete and current details, please refer to the official Auckland Transport website.</em>",
+        "irdTitle": "Step By Step Guidance To Set Up IRD Number",
+        "irdIntro": "To work part-time or access tax benefits in New Zealand as a student, you’ll need an IRD number (Inland Revenue Department number). This unique identifier is essential for tax purposes, ensuring you’re taxed correctly and can access entitlements. Here’s a comprehensive guide to help you set up your IRD number:",
+        "irdStep1Title": "Step 1: Determine Your Application Category",
+        "irdStep1Cat1": "<strong>New Arrival to New Zealand:</strong> If you’ve recently arrived and are within the timeframe specified by your visa, apply as a ‘new arrival’.",
+        "irdStep1Cat2": "<strong>Living in New Zealand and Not a New Arrival:</strong> If you’ve been in New Zealand beyond your visa’s arrival date or are a New Zealand citizen/resident, use this category.",
+        "irdStep1Cat3": "<strong>Living Overseas:</strong> If you’re applying before arriving in New Zealand, this is your category.",
+        "irdStep2Title": "Step 2: Gather Required Documents",
+        "irdStep2Desc": "Depending on your application category, you’ll need:",
+        "irdStep2Doc1": "<strong>Photo Identification:</strong> A valid passport or other approved ID.",
+        "irdStep2Doc2": "<strong>Proof of Address:</strong> Such as a utility bill or tenancy agreement.",
+        "irdStep2Doc3": "<strong>Visa Details:</strong> Your Immigration New Zealand application number.",
+        "irdStep2Doc4": "<strong>Tax Identification Number (TIN):</strong> From your home country, if available.",
+        "irdStep2Doc5": "<strong>New Zealand Bank Account:</strong> Evidence of a fully functional account or completed customer due diligence (IR997 form).",
+        "irdStep2TranslationNote": "Ensure all documents are in English or accompanied by certified translations.",
+        "irdStep3Title": "Step 3: Submit Your Application",
+        "irdStep3Online": "", "irdStep3OnlineTitle": "Online Application:", "irdStep3OnlineDesc": "Apply through the Inland Revenue website corresponding to your category:",
+        "irdStep3OnlineCat1": "New Arrival to New Zealand", "irdStep3OnlineCat2": "Living in New Zealand and Not a New Arrival", "irdStep3OnlineCat3": "Living Overseas",
+        "irdStep3InPerson": "<strong>In-Person Verification:</strong> If applying as ‘living in New Zealand and not a new arrival’, after online submission, visit an AA driver licensing agent within 60 days with your original documents for identity verification.",
+        "irdStep3Email": "<strong>Email Submission:</strong> If applying from overseas, complete the IR742 form and email it with scanned documents to [email protected]",
+        "irdStep4Title": "Step 4: Receive Your IRD Number",
+        "irdStep4Desc": "After successful application and verification:",
+        "irdStep4Processing": "<strong>Processing Time:</strong> Typically, within 2 working days if applying online; up to 10 working days by post.",
+        "irdStep4Delivery": "<strong>Delivery:</strong> You’ll receive your IRD number via email, text, or post, depending on your chosen method.",
+        "bankAccountTitle": "Detailed Instructions On How To Open A Bank Account",
+        "bankAccountIntro": "Opening a student bank account in New Zealand is a fundamental step in managing your finances during your studies. It enables you to handle tuition payments, receive funds from home, pay for daily expenses, and even earn income from part-time work. Moreover, having a local bank account helps you avoid international transaction fees and simplifies money transfers.",
+        "bankAccountGuideDesc": "This guide provides detailed, step-by-step instructions to help you open a student bank account in New Zealand, ensuring a smooth and efficient process.",
+        "bankAccountPopularTitle": "Popular Student Bank Accounts in New Zealand",
+        "bankAccountPopularDesc": "Here are some banks that offer student-friendly accounts:",
+        "bankAccountANZ": "ANZ Jumpstart Account", "bankAccountWestpac": "Westpac International Student Account", "bankAccountASB": "ASB Tertiary Account/ ASB International Student Account", "bankAccountBNZ": "BNZ YouMoney Account", "bankAccountKiwibank": "Kiwibank FreeUp Account",
+        "bankAccountNeededTitle": "What You’ll Need to Open a Student Bank Account",
+        "bankAccountNeededDesc": "Most banks in New Zealand require the following documents:",
+        "bankAccountNeededDoc1": "<strong>Valid Passport:</strong> Serves as your primary identification.",
+        "bankAccountNeededDoc2": "<strong>Student Visa:</strong> A visa valid for at least six months is typically required.",
+        "bankAccountNeededDoc3": "<strong>Proof of Enrolment:</strong> Such as your Offer of Place or Student ID card.",
+        "bankAccountNeededDoc4": "<strong>Proof of New Zealand Address:</strong> This could be a tenancy agreement, utility bill, or a letter from your institution confirming your residence.",
+        "bankAccountNeededDoc5": "<strong>Tax Identification Number:</strong> From your home country and/or your New Zealand IRD (Inland Revenue Department) number.",
+        "bankAccountStepsTitle": "Steps to Open a Student Bank Account",
+        "bankAccountStep1": "", "bankAccountStep1Choose": "Choose a Bank:", "bankAccountStep1ChooseDesc": "Research banks that offer student accounts and compare their features.",
+        "bankAccountStep2": "", "bankAccountStep2Apply": "Apply Online or In-Branch:",
+        "bankAccountStep2Online": "", "bankAccountStep2OnlineTitle": "Online:", "bankAccountStep2OnlineDesc": "Some banks allow you to start the application process online, even before arriving in New Zealand.",
+        "bankAccountStep2InBranch": "", "bankAccountStep2InBranchTitle": "In-Branch:", "bankAccountStep2InBranchDesc": "Visit a local branch with your documents. It’s advisable to make an appointment in advance.",
+        "bankAccountStep3": "", "bankAccountStep3Complete": "Complete the Application:", "bankAccountStep3CompleteDesc": "Fill out the necessary forms and provide your documents.",
+        "bankAccountStep4": "", "bankAccountStep4Activate": "Activate Your Account:", "bankAccountStep4ActivateDesc": "Once approved, you’ll receive your account details and debit card.",
+        "realmeTitle": "How to create a realme Account",
+        "realmeIntro": "Go to the link below:",
+        "realmeLinkText": "RealMe - Login",
+        "realmeFollowSteps": "Follow the steps below to create your RealMe profile:",
+        "realmeStep1": "Select Create your RealMe login.",
+        "realmeStep2": "Set up your RealMe account by:",
+        "realmeStep2Email": "providing your email address", "realmeStep2Username": "providing a username", "realmeStep2Password": "providing a password", "realmeStep2Security": "choosing 3 security questions and providing answers", "realmeStep2Captcha": "proving you’re a human – enter the characters you see in the picture.",
+        "realmeStep3": "Accept the Terms of use and select Continue.",
+        "realmeStep4": "Accept the account security disclaimer to create your Immigration Online profile.",
+        "realmeStep5": "You will be redirected to the Immigration Online page. Enter a display name (this can be different to your RealMe username) and your email address.",
+        "realmeStep6": "Choose Agree and continue.",
+        "realmeStep7": "You will receive 2 emails:",
+        "realmeStep7Email1": "an email from RealMe to say that your Registration is successful, and", "realmeStep7Email2": "an email from Immigration Online to verify your account.",
+        "realmeStep7Spam": "Check your spam mail if you have not received an email.",
+        "realmeStep8": "Select Verification Link in the email from Immigration Online to activate your account. Then follow the links provided to verify your account.",
+        "realmeStep9": "Select View my account and then Visitor Visa to complete the online application form.",
+        "realmeStep10": "Once you are completed with the online account creating process you may receive an email mentioning you will have to visit the nearest AA center to get you photo taken within 15 days to match with your Realme profile. (Make sure to note the code in the email as you will need it at the AA center as a reference)",
+        "realmeStep11": "Once the photo is processed, you will receive an email within 10 days that your Realme account is created.",
+        "campusTravelTitle": "Inter-Campus Travel",
+        "mapPlaceholderOverview": "[Overview Map of City, Grafton, and Newmarket Campuses]",
+        "walking": "Walking:", "bus": "Bus:",
+        "campusTravelCityGraftonTitle": "City &harr; Grafton:", "campusTravelCityGraftonWalk": "Approximately 1.3 KM about 15 minutes.", "campusTravelCityGraftonBus": "InnerLink (INN) provides direct service between the campuses.",
+        "campusTravelCityNewmarketTitle": "City &harr; Newmarket:", "campusTravelCityNewmarketWalk": "Approximately 2 KM, about 30 minutes.", "campusTravelCityNewmarketBus": "Routes 70 and 75 offer direct connections.",
+        "campusTravelGraftonNewmarketTitle": "Grafton &harr; Newmarket:", "campusTravelGraftonNewmarketWalk": "Approximately 1.1 KM, about 20 minutes.", "campusTravelGraftonNewmarketBus": "Routes 70 and 75 provide service between these campuses.",
+        "campusTravelRealTime": "<em>For real-time schedules and route planning, consider using the Auckland Transport Journey Planner or the Google MAP App.</em>",
+        "campusTravelKeyBusStops": "Key Bus Stops",
+        "campusTravelCityCampusStops": "City Campus (Main Campus)",
+        "campusTravelStopUOA": "University of Auckland (Stop ID: 1096):", "campusTravelStopUOALocation": "Location: 12 Grafton Road, adjacent to the City Campus.", "campusTravelStopUOARoutes": "Bus Routes: 25B, 76, NX2, OUT, 101, 321, 27H, 27T, 27W, 70, 72X, 931, 933, 939.",
+        "campusTravelStopAuckUni": "Auckland Universities (Stop ID: 7147):", "campusTravelStopAuckUniLocation": "Location: Symonds Street, directly adjacent to the City Campus.", "campusTravelStopAuckUniRoutes": "Bus Routes: 22N, 22R, 24B, 24R, 25L, 27H, 27T, 27W, 70, 82, NX2, 802, 923, 924.",
+        "campusTravelStopWaterloo": "Waterloo Quadrant (Stop ID: 7144):", "campusTravelStopWaterlooLocation": "Location: Approximately a 5-minute walk from the City Campus.", "campusTravelStopWaterlooRoutes": "Bus Routes: 25B, 70, INN, OUT, 27H, 27T, 27W, 321, MEX, 72X, 931, 933, 939, 755.",
+        "campusTravelGraftonCampusStops": "Grafton Campus",
+        "campusTravelStopParkRd": "Park Road / Auckland City Hospital:", "campusTravelStopParkRdLocation": "Location: Approximately a 3-minute walk from the Grafton Campus.", "campusTravelStopParkRdRoutes": "Bus Routes: 30, 309, 321, 75, 866, INN (InnerLink), RBW (Western Rail Bus).",
+        "campusTravelNewmarketCampusStops": "Newmarket Campus",
+        "campusTravelStopMelrose": "Melrose Street:", "campusTravelStopMelroseLocation": "Location: Approximately a 2-minute walk from the Newmarket Campus.", "campusTravelStopMelroseRoutes": "Bus Routes: INN (InnerLink), 30, 64, 70, 75.",
+        "campusTravelStopKhyber": "Khyber Pass Road / Mountain Road:", "campusTravelStopKhyberLocation": "Location: Approximately a 4-minute walk from the Newmarket Campus.", "campusTravelStopKhyberRoutes": "Bus Routes: N10.",
+        "linksTitle": "LINKS:", "linksAllMaps": "1. ALL MAPS:", "linksParkingInfo": "2. PARKING INFORMATION:",
+        "cityCampusTitle": "City Campus Map & Directory", "mapPlaceholderCity": "[City Campus Detailed Map]",
+        "cityCampusDirectoryTitle": "Key Locations / Directory (City Campus)", "cityCampusDirectoryNote": "<em>(Note: This is a partial representation. Refer to original PDF for the full list.)</em>",
+        "cityCampusParkingTitle": "Student Parking at the University of Auckland – Quick Guide", "cityCampusParkingOGGB": "City Campus (Owen G. Glenn Building - OGGB)",
+        "location": "Location:", "cityCampusParkingLocation": "Access via Grafton Road (opposite Stanley Street)",
+        "availability": "Availability:", "cityCampusParkingAvailability": "5 parking levels, over 1,000 spaces",
+        "hours": "Hours:", "cityCampusParkingHoursWeekdays": "Weekdays: 6:30am–11:30pm", "cityCampusParkingHoursWeekends": "Weekends: 7am–11:00pm", "cityCampusParkingHoursClosed": "Closed on public holidays",
+        "casualRates": "Casual Rates:", "cityCampusParkingRate1": "$5/hour (up to 5 hours)", "cityCampusParkingRate2": "$25 flat rate (5+ hours, Mon–Fri before 4:30pm)", "cityCampusParkingRate3": "$6 flat rate (after 4:30pm weekdays / all-day weekends)",
+        "payment": "Payment:", "cityCampusParkingPayment": "Pay at machines near the lifts. Use ticket to exit. EFTPOS accepted (credit card fee 1.9%). $25 lost ticket charge.",
+        "mapPlaceholderCityRestaurants": "[City Campus Restaurants Map]", "cityCampusRestaurantsNote": "FOOD COURT. The 15-minute walk is in the city center, where there are even more restaurants.",
+        "graftonCampusTitle": "Grafton Campus Map & Directory", "mapPlaceholderGrafton": "[Grafton Campus Map]",
+        "graftonCampusDirectoryTitle": "Directory (Grafton Campus)", "graftonCampusDirectoryNote": "<em>(Refer to original PDF for the full list.)</em>",
+        "newmarketCampusTitle": "Newmarket Campus Map & Directory", "mapPlaceholderNewmarket": "[Newmarket Campus Map]",
+        "newmarketCampusDirectoryTitle": "Directory (Newmarket Campus)", "newmarketCampusDirectoryNote": "<em>(Refer to original PDF for the full list.)</em>",
+        "printerLocationsTitle": "Printer Locations",
+        "printerLocationsDesc": "All-in-one devices capable of printing, photocopying, and scanning are available in study spaces, libraries, and student accommodations across campus.",
+        "printingGuideTitle": "Printing at the University of Auckland (For Students)",
+        "printingHowToPrint": "How to Print",
+        "printingHowToLogin": "<strong>Log in:</strong> Use your Campus Card or student email and password.",
+        "printingHowToFunds": "<strong>Funds:</strong> Ensure you have a positive balance in your University printing account.",
+        "printingHowToLocations": "<strong>Locations:</strong> (As mentioned above).",
+        "printingFromPersonal": "Printing from Personal Devices",
+        "printingWebPrintService": "Web Print Service:",
+        "printingWebPrintStep1": "Go to papercut.auckland.ac.nz and log in.",
+        "printingWebPrintStep2": "Select 'Web Print' from the menu.",
+        "printingWebPrintStep3": "Click 'Submit a Job'.",
+        "printingWebPrintStep4": "Choose 'FollowMe-BW (virtual)' or 'FollowMe-Colour (virtual)' as your printer.",
+        "printingWebPrintStep5": "Follow the prompts to upload your document and release the print job at any printer by logging in with your Campus Card or credentials.",
+        "printingCosts": "Printing Costs",
+        "printingCostBW": "<strong>Black and White:</strong> A4/A3: $0.10 per page. Double-sided: $0.20 per page.",
+        "printingCostColour": "<strong>Colour:</strong> A4/A3: $0.20 per page. Double-sided: $0.40 per page.",
+        "printingAddingFunds": "Adding Funds to Your Printing Account",
+        "printingFundsEpos": "<strong>ePOS Stations:</strong> Located on campus, including outside Case Room 3 on Level 0.",
+        "printingFundsOnline": "<strong>Online Transfer:</strong> Transfer funds from your 'copy balance' to 'print balance' via your NetAccount.",
+        "footerText": "&copy; KitUp - University Welcome Kit. Information derived from the provided PDF document."
+    }
+    </script>
+
+    <script id="translations-es" type="application/json">
+    {
+        "headerTitle": "KitUp",
+        "headerSubtitle": "DESEMPAQUETA TU BIENVENIDA",
+        "logoPlaceholder": "[Logo de KitUp]",
+        "navEnglish": "Inglés",
+        "navSpanish": "Español",
+        "navFrench": "Français",
+        "navChinese": "中文",
+        "tocTitle": "Tabla de Contenidos",
+        "tocHeaderContent": "Contenido",
+        "tocHeaderPages": "Páginas",
+        "tocItem1": "Lista de Verificación Anual para Nuevos Estudiantes", "tocItem1Pages": "2-4",
+        "tocItem2": "Lista de Verificación de Incorporación para Nuevos Estudiantes", "tocItem2Pages": "5-6",
+        "tocItem3": "Contactos de Emergencia y Servicios de Apoyo", "tocItem3Pages": "7-8",
+        "tocItem4": "Guía de Selección de Cursos", "tocItem4Pages": "9-10",
+        "tocItem5": "Tarjeta AT HOP y Concesión Terciaria", "tocItem5Pages": "11-16",
+        "tocItem6": "Configuración de un Número IRD", "tocItem6Pages": "17-20",
+        "tocItem7": "Apertura de una Cuenta Bancaria", "tocItem7Pages": "21-22",
+        "tocItem8": "Creación de una Cuenta RealMe", "tocItem8Pages": "23-24",
+        "tocItem9": "Mapas del Campus y Estacionamiento", "tocItem9Pages": "25-30",
+        "tocItem10": "Ubicaciones de Impresoras y Guía de Impresión", "tocItem10Pages": "31-32",
+        "accommodationSupportTitle": "Soporte de Alojamiento",
+        "accSupportService": "Servicio", "accSupportLocation": "Ubicación", "accSupportContact": "Contacto", "accSupportNotes": "Notas",
+        "accUoASupport": "Soporte de Alojamiento UoA", "accUoALocation": "Soluciones de Alojamiento, Oficina 219A, Nivel 2, Kate Edger Information Commons, Auckland 1010, Nueva Zelanda, 86 Symonds", "accUoANotes": "Horario de oficina: Lunes a Viernes, 8:30am - 5:00pm",
+        "accCarlawPark": "Villa Estudiantil Carlaw Park", "accCarlawParkLocation": "", "accCarlawParkContact": "Email: dsymonds@auckland.ac.nz, Teléfono de guardia: 027 565 0442, Email: cpsv@auckland.ac.nz, Teléfono de guardia: 027 257 2443", "accCarlawParkNotes": "",
+        "accGraftonHall": "Residencia Grafton", "accGraftonHallLocation": "", "accGraftonHallContact": "Email: graftonhall@auckland.ac.nz, Teléfono de guardia: 021 478 069", "accGraftonHallNotes": "",
+        "accGraftonFlats": "Apartamentos Estudiantiles Grafton y Residencia Goldies", "accGraftonFlatsLocation": "", "accGraftonFlatsContact": "Email: graftonstudentflats@auckland.ac.nz, Teléfono de guardia: 021 478 069", "accGraftonFlatsNotes": "",
+        "accORorkeHall": "Residencia O'Rorke", "accORorkeHallLocation": "", "accORorkeHallContact": "Email: ororke@auckland.ac.nz, Teléfono de guardia: 021 989 637", "accORorkeHallNotes": "",
+        "accStuartMcCutcheon": "Casa Stuart McCutcheon", "accStuartMcCutcheonLocation": "", "accStuartMcCutcheonContact": "Email: smh@auckland.ac.nz, Teléfono de guardia: 027 707 9813", "accStuartMcCutcheonNotes": "",
+        "accTeTirohanga": "Te Tirohanga o te Tōangaroa", "accTeTirohangaLocation": "", "accTeTirohangaContact": "Email: ttt@auckland.ac.nz, Teléfono de guardia: 027 233 4612", "accTeTirohangaNotes": "",
+        "accUniHallTowers": "Torres University Hall y Casa Waikohanga", "accUniHallTowersLocation": "", "accUniHallTowersContact": "Email: universityhall@auckland.ac.nz, Teléfono de guardia: 027 544 2520", "accUniHallTowersNotes": "",
+        "accWaiparuruHall": "Residencia Waipārūrū", "accWaiparuruHallLocation": "", "accWaiparuruHallContact": "Email: waiparuruhall@auckland.ac.nz, Teléfono de guardia: 021 989 638", "accWaiparuruHallNotes": "",
+        "courseSelectionTitle": "Guía de Selección de Cursos",
+        "courseSelectionIntro": "La selección de cursos es más que una lista de verificación: es tu primer paso hacia un nuevo y emocionante capítulo. Elige lo que te inspira, confía en tus instintos y sabe que estamos aquí para apoyarte en cada paso del camino.",
+        "courseSelectionSubtitle": "Guía paso a paso para la selección de cursos para Waipapa Taumata Rau | La Universidad de Auckland",
+        "courseSelPhase": "Fase", "courseSelWhatToDo": "Qué hacer", "courseSelWhereHow": "Dónde / cómo", "courseSelWhyMatters": "Por qué importa",
+        "courseSelPhase1": "1 Obtén la visión general", "courseSelWhat1": "- Descarga el Planificador de Grado para tu programa/especialización<br>- Revisa el prospecto de la facultad y los manuales de “Cursos Troncales”", "courseSelWhere1": "Sitio web de la facultad → sección “Planificadores de grado” (La Universidad de Auckland)", "courseSelWhy1": "Confirma todos los cursos obligatorios (troncales) y la secuenciación típica para no pasar por alto requisitos.",
+        "courseSelPhase2": "2 Verifica las regulaciones oficiales", "courseSelWhat2": "- Abre la página de Regulaciones del Programa en el Calendario<br>- Anota los totales de créditos, reglas de etapa (I/II/III/PG), umbrales de GPA y cualquier trabajo de culminación/práctica.", "courseSelWhere2": "Calendario (a través de sso.auckland o SSO ‘Asesoramiento e información de cursos’) (La Universidad de Auckland)", "courseSelWhy2": "Las regulaciones lo anulan todo; conocerlas evita sorpresas tardías en la titulación.",
+        "courseSelPhase3": "3 Enumera primero tus cursos básicos", "courseSelWhat3": "A partir de los pasos 1-2, crea una lista actualizada de cada trabajo básico (código del curso + puntos + requisitos previos/correquisitos)", "courseSelWhere3": "Documento/hoja simple; los arrastrarás a cada semestre en el Paso 5.", "courseSelWhy3": "Te mantiene enfocado en lo que “debes hacer” antes que en lo “agradable de hacer”.",
+        "courseSelPhase4": "4 Audita los requisitos previos y la secuenciación", "courseSelWhat4": "Para cada trabajo básico, abre su Esquema del Curso → anota los requisitos previos, correquisitos y etapas recomendadas.", "courseSelWhere4": "Búsqueda de “Esquemas de cursos” de SSO (La Universidad de Auckland)", "courseSelWhy4": "Evita bloqueos de inscripción causados por la falta de requisitos previos.",
+        "courseSelPhase5": "5 Construye un mapa multisemestral", "courseSelWhat5": "- Inicia sesión en el Planificador de Horarios dentro de SSO y crea horarios de muestra para el próximo año (o todo el grado si lo deseas).<br>- Arrastra los trabajos básicos a los semestres recomendados; llena los vacíos con electivas o GenEds.", "courseSelWhere5": "SSO → Planificador de Horarios (La Universidad de Auckland)", "courseSelWhy5": "Visualiza conflictos y equilibrio de la carga de trabajo, mostrando si todo encajará realmente.",
+        "courseSelPhase6": "6 Valida con un asesor", "courseSelWhat6": "- Envía un correo electrónico/visita un Centro de Estudiantes o una sesión de asesoramiento de cursos de la facultad; lleva tu mapa.", "courseSelWhere6": "AskAuckland → reserva de asesoramiento de cursos (La Universidad de Auckland)", "courseSelWhy6": "El personal puede detectar reglas ocultas (p. ej., trabajos de cohorte) y aprobar variaciones.",
+        "courseSelPhase7": "7 Inscríbete temprano", "courseSelWhat7": "- Usa los Servicios Estudiantiles en Línea → Inscripción para agregar cursos + laboratorios/tutorías asociadas.", "courseSelWhere7": "SSO → asistente de Inscripción (La Universidad de Auckland)", "courseSelWhy7": "Las clases populares se llenan rápidamente; los cupos básicos pueden agotarse.",
+        "courseSelPhase8": "8 Confirma tarifas y carga de puntos", "courseSelWhat8": "- Verifica la estimación de tarifas y el Límite de Puntos de Inscripción para asegurar el estado de tiempo completo (generalmente ≥100 pts/año para pregrado).", "courseSelWhere8": "Pestaña de finanzas de SSO + página de información de inscripción (La Universidad de Auckland)", "courseSelWhy8": "Mantiene la elegibilidad para visa/préstamo y el cronograma de graduación.",
+        "courseSelPhase9": "9 Revisa justo antes del semestre", "courseSelWhat9": "- Vuelve a abrir el Planificador de Horarios una semana antes de las clases para cambios de sala/horario.<br>- Abandona/Intercambia durante la ventana de Cambio de Inscripción si es necesario.", "courseSelWhere9": "SSO → vista de Horario", "courseSelWhy9": "Detecta cambios de horario de última hora y te permite arreglar conflictos sin penalización.",
+        "proTipsTitle": "Consejos profesionales",
+        "proTip1": "Guarda los PDF de los cursos troncales (p. ej., Manual Troncal de la Escuela de Negocios) para referencia rápida sobre políticas y resultados de aprendizaje (La Universidad de Auckland).",
+        "proTip2": "Establece recordatorios en el calendario para las fechas de apertura de inscripción y las últimas fechas para agregar/eliminar sin penalización.",
+        "proTip3": "Mantén una lista de electivas de respaldo, útil cuando un curso troncal está lleno o pospuesto.",
+        "courseSelectionOutro": "Con este flujo de trabajo, siempre cargarás primero las asignaturas troncales, verificarás los requisitos previos con anticipación y asegurarás un horario sin conflictos mucho antes de que comiencen las clases. ¡Feliz estudio!",
+        "atCardTitle": "Todo sobre la tarjeta AT (transporte público)",
+        "atCardWhatIs": "¿Qué es una tarjeta AT HOP?",
+        "atCardWhatIsDesc": "Una tarjeta AT HOP es una tarjeta inteligente recargable y prepagada que te permite pagar los servicios de autobús, tren y la mayoría de los ferries en Auckland. Ofrece tarifas con descuento en comparación con los pagos en efectivo y brinda comodidad a los viajeros frecuentes.",
+        "atCardHowToUse": "Cómo usar tu tarjeta AT HOP",
+        "atCardTagOn": "1. Valida al Embarcar", "atCardTagOnLocate": "<strong>Localiza el Lector de Tarjetas:</strong> Al subir al autobús, estación de tren o terminal de ferry, busca el lector de tarjetas AT HOP.", "atCardTagOnPresent": "<strong>Presenta tu Tarjeta:</strong> Sostén tu tarjeta HOP plana contra el lector hasta que escuches un pitido y veas una luz verde. Esto indica una validación exitosa.",
+        "atCardTagOff": "2. Valida al Salir", "atCardTagOffLocate": "<strong>Encuentra el Lector de Salida:</strong> Antes de abandonar el vehículo o la estación, localiza el lector de tarjetas.", "atCardTagOffPresent": "<strong>Presenta tu Tarjeta Nuevamente:</strong> Sostén tu tarjeta contra el lector hasta que escuches un pitido y veas una luz verde. Esto registra tu salida y asegura que se te cobre la tarifa correcta.",
+        "atCardImportant": "Importante:", "atCardImportantDesc": "Siempre valida al entrar y salir con la misma tarjeta o dispositivo para evitar que se te cobre una tarifa predeterminada.",
+        "atCardRechargeTitle": "Cómo Recargar (Cargar Saldo) tu Tarjeta AT HOP",
+        "atCardOnlineTopUp": "Recarga en Línea",
+        "atCardOnlineStep1": "<strong>Registra tu Tarjeta:</strong> Crea una cuenta MyAT y registra tu tarjeta HOP.", "atCardOnlineStep2": "<strong>Inicia Sesión:</strong> Accede a tu cuenta MyAT.", "atCardOnlineStep3": "<strong>Selecciona Recarga:</strong> Elige la tarjeta que deseas recargar y selecciona 'Recargar en línea'.", "atCardOnlineStep4": "<strong>Ingresa Monto y Detalles de Pago:</strong> Especifica el monto y proporciona la información de tu tarjeta de crédito o débito.", "atCardOnlineStep5": "<strong>Confirma y Activa:</strong> Después del pago, valida en cualquier lector AT HOP dentro de los 60 días para activar la recarga.", "atCardOnlineNote": "Nota:", "atCardOnlineNoteDesc": "Las recargas en línea pueden tardar hasta 1 hora en estar disponibles.",
+        "atCardInPersonTopUp": "Recarga en Persona",
+        "atCardInPersonRetailers": "<strong>Minoristas:</strong> Visita un minorista AT HOP.", "atCardInPersonMachines": "<strong>Máquinas de Billetes y Recarga:</strong> Usa las máquinas ubicadas en las estaciones de tren y en el Northern Busway.", "atCardInPersonCenters": "<strong>Centros de Servicio al Cliente:</strong> Recarga en estos centros en Auckland.", "atCardInPersonTip": "Consejo: Las recargas en persona están disponibles de inmediato.",
+        "atCardAutoTopUp": "Recarga Automática",
+        "atCardAutoStep1": "<strong>Configurar:</strong> En tu cuenta MyAT, elige 'Configurar recarga automática'.", "atCardAutoStep2": "<strong>Configurar Ajustes:</strong> Selecciona un umbral de saldo mínimo y un monto de recarga.", "atCardAutoStep3": "<strong>Detalles de Pago:</strong> Proporciona la información de tu tarjeta de crédito/débito o cuenta bancaria.", "atCardAutoStep4": "<strong>Activar:</strong> Valida en un lector AT HOP dentro de los 60 días para activar la recarga automática.", "atCardAutoStep5": "<strong>Beneficio:</strong> La recarga automática asegura que nunca te quedes sin saldo.",
+        "atCardTertiaryConcessionTitle": "¿Eres Elegible para la Concesión Terciaria?",
+        "atCardStudentCriteria": "Criterios del Estudiante:",
+        "atCardCriteriaFullTime": "Debes ser un <strong>estudiante a tiempo completo</strong>.", "atCardCriteriaNZQA": "Inscrito y asistiendo a un curso terciario acreditado y aprobado por NZQA.", "atCardCriteriaATApproved": "Estudiando en un proveedor terciario aprobado por AT.", "atCardCriteriaFeesFree": "Los estudiantes elegibles para educación gratuita también pueden ser elegibles.",
+        "atCardApprovedProviderCriteria": "Criterios del Proveedor Terciario Aprobado por AT:",
+        "atCardProviderMinEdu": "Registrado en el Ministerio de Educación.", "atCardProviderNZQA": "Registrado en NZQA (para PTEs y TITOs).", "atCardProviderOffers": "Ofrece cursos terciarios aprobados y acreditados por NZQA.", "atCardProviderLocated": "Ubicado en la región de Auckland.", "atCardProviderSigned": "Firmó un acuerdo de Participación Terciaria con AT.", "atCardProviderAppApproved": "Los \"Proveedores Aprobados por la App\" están adicionalmente autorizados para la verificación de la app AT Mobile.",
+        "atCardDefiningFullTime": "Definición de “Estudiante a Tiempo Completo” (basado en EFTS) para la Concesión Terciaria:",
+        "atCardDefiningFullTimeDesc": "AT utiliza el valor de Estudiante Equivalente a Tiempo Completo (EFTS) de la Comisión de Educación Terciaria (TEC).",
+        "atCardFullTimeFullYear": "<strong>Tiempo completo/Año completo:</strong> Mínimo 0.8 EFTS durante al menos 32 semanas consecutivas en un año académico completo.", "atCardFullTimePartYear": "<strong>Tiempo completo/Parte del año (Semestre):</strong> Mínimo 0.4 EFTS durante al menos 16 semanas consecutivas dentro del año académico.", "atCardLimitedFullTime": "<strong>Tiempo completo limitado:</strong> Cumple con la definición de StudyLink y tiene una carta de aprobación de StudyLink.",
+        "atCardGettingConcession": "Obtención de tu Concesión Terciaria",
+        "atCardGettingConcessionDesc": "Para cargar una concesión terciaria en tu tarjeta AT HOP, primero se debe confirmar tu elegibilidad:",
+        "atCardStickerTitle": "Adhesivo de ID Terciario AT",
+        "atCardStickerApplied": "Aplicado a tu tarjeta de identificación de estudiante terciario válida.", "atCardStickerIssued": "Emitido por tu proveedor terciario aprobado por AT.", "atCardStickerPink": "<strong>Adhesivo rosa:</strong> Solo primer semestre.", "atCardStickerGreen": "<strong>Adhesivo verde:</strong> Segundo semestre o año completo.", "atCardStickerRequires": "Requiere un recibo/certificado de tasas de tu proveedor.", "atCardStickerValid": "Concesión válida hasta que expire tu ID de estudiante o adhesivo (lo que ocurra primero).", "atCardStickerFullYear": "Adhesivo de año completo (vence el 31 de marzo del próximo año) si estás inscrito por un mín. de 32 semanas consecutivas.", "atCardStickerPartYear": "Adhesivo de parte del año si se cumplen las condiciones para un semestre (p. ej., 0.4 EFTS por 16 semanas).",
+        "atCardStickerShowEligible": "Mostrar estado \"Elegible\" en la aplicación (solo para \"Proveedores aprobados por la aplicación\").", "atCardStickerConcessionUpTo": "La concesión puede estar disponible hasta por 3 años, sujeta a la revalidación continua de la elegibilidad por parte de su proveedor.", "atCardStickerEnrollmentChanges": "Si su inscripción cambia (por ejemplo, EFTS cae por debajo de 0.4 durante un semestre), su proveedor notifica a AT y su concesión puede expirar después de un aviso de 2 semanas.",
+        "atCardMobileApp": "Aplicación Móvil AT",
+        "atCardStickerNoteTitle": "Nota:", "atCardStickerNoteDesc": "Si no asistes a un proveedor aprobado por la aplicación o no tienes un teléfono inteligente compatible, debes usar el método del adhesivo de ID Terciario AT.",
+        "atCardCoverageExclusions": "Cobertura y Exclusiones de la Concesión Terciaria",
+        "atCardWhatsIncluded": "Qué Incluye:",
+        "atCardIncludedDiscount": "El descuento se aplica al viajar con una tarjeta AT HOP cargada con una concesión terciaria.", "atCardIncludedValidOn": "Válido en trenes y servicios seleccionados de autobús y ferry.", "atCardIncludedFares": "Las tarifas son al menos un 20% menores que la tarifa de viaje único para adultos de AT HOP.", "atCardIncludedAvailable": "Disponible en servicios operados bajo contrato entre AT y operadores de transporte público.",
+        "atCardWhoNotEligible": "Quién NO es Elegible para la Concesión Terciaria:",
+        "atCardNotEligiblePartTime": "Estudiantes a tiempo parcial.", "atCardNotEligibleYouth": "Estudiantes en Garantía Juvenil, Oportunidades de Capacitación Enfocadas en la Fundación o cursos similares financiados por el gobierno.", "atCardNotEligibleCorrespondence": "Aquellos en estudio por correspondencia, aprendizaje a distancia o que reciben financiamiento gubernamental para el transporte.",
+        "atCardServiceExclusions": "Exclusiones de Servicio para la Concesión Terciaria:",
+        "atCardServiceExclusionsDesc": "Algunos servicios no están cubiertos. AT y los operadores pueden agregar/eliminar rutas del esquema sin previo aviso. En caso de duda, consulta con el operador.",
+        "atCardImportantConditions": "Condiciones Importantes para la Concesión Terciaria",
+        "atCardAdultFareIf": "Pagarás una <strong>tarifa de adulto</strong> si:",
+        "atCardAdultFareNoConcession": "No tienes una concesión terciaria cargada en tu tarjeta AT HOP.", "atCardAdultFareCannotConfirm": "No puedes confirmar la elegibilidad a través de la aplicación AT Mobile (si corresponde).", "atCardAdultFareNoValidID": "No puedes presentar una tarjeta de ID de Estudiante Terciario válida con un adhesivo de ID Terciario AT válido.",
+        "atCardTermsRevision": "Auckland Transport puede revisar estos términos y condiciones en cualquier momento sin previo aviso. Los cambios entran en vigor inmediatamente después de su publicación en su sitio web.", "atCardFareSchemesReview": "AT revisa regularmente sus esquemas de tarifas concesionadas, lo que puede resultar en cambios.",
+        "atCardFurtherInfo": "Información Adicional para la Concesión Terciaria",
+        "atCardFurtherInfoApplication": "Para el proceso de solicitud, visita la página “Concesión para estudiantes terciarios” en el sitio web de Auckland Transport.", "atCardFurtherInfoOperators": "Algunos operadores como Fullers Ferries (www.fullers.co.nz) y SeaLink Ferries (www.sealink.co.nz) pueden ofrecer sus propios descuentos terciarios para servicios no contratados por AT.", "atCardFurtherInfoShuttle": "Consulta con tu proveedor terciario sobre los servicios de autobús de enlace del campus, que operan independientemente de este esquema.",
+        "atCardSummaryNote": "<em>Esta información es un resumen. Para obtener detalles completos y actuales, consulta el sitio web oficial de Auckland Transport.</em>",
+        "irdTitle": "Guía Paso a Paso para Configurar el Número IRD",
+        "irdIntro": "Para trabajar a tiempo parcial o acceder a beneficios fiscales en Nueva Zelanda como estudiante, necesitarás un número IRD (Departamento de Impuestos Internos). Este identificador único es esencial para fines fiscales, asegurando que se te impongan los impuestos correctamente y puedas acceder a los derechos. Aquí tienes una guía completa para ayudarte a configurar tu número IRD:",
+        "irdStep1Title": "Paso 1: Determina tu Categoría de Solicitud",
+        "irdStep1Cat1": "<strong>Recién Llegado a Nueva Zelanda:</strong> Si llegaste recientemente y estás dentro del plazo especificado por tu visa, solicita como 'recién llegado'.", "irdStep1Cat2": "<strong>Viviendo en Nueva Zelanda y No Recién Llegado:</strong> Si has estado en Nueva Zelanda más allá de la fecha de llegada de tu visa o eres ciudadano/residente de Nueva Zelanda, usa esta categoría.", "irdStep1Cat3": "<strong>Viviendo en el Extranjero:</strong> Si estás solicitando antes de llegar a Nueva Zelanda, esta es tu categoría.",
+        "irdStep2Title": "Paso 2: Reúne los Documentos Requeridos",
+        "irdStep2Desc": "Dependiendo de tu categoría de solicitud, necesitarás:",
+        "irdStep2Doc1": "<strong>Identificación con Foto:</strong> Un pasaporte válido u otra identificación aprobada.", "irdStep2Doc2": "<strong>Prueba de Dirección:</strong> Como una factura de servicios públicos o contrato de arrendamiento.", "irdStep2Doc3": "<strong>Detalles de la Visa:</strong> Tu número de solicitud de Inmigración de Nueva Zelanda.", "irdStep2Doc4": "<strong>Número de Identificación Fiscal (TIN):</strong> De tu país de origen, si está disponible.", "irdStep2Doc5": "<strong>Cuenta Bancaria de Nueva Zelanda:</strong> Evidencia de una cuenta completamente funcional o diligencia debida del cliente completada (formulario IR997).",
+        "irdStep2TranslationNote": "Asegúrate de que todos los documentos estén en inglés o acompañados de traducciones certificadas.",
+        "irdStep3Title": "Paso 3: Envía tu Solicitud",
+        "irdStep3OnlineTitle": "Solicitud en Línea:", "irdStep3OnlineDesc": "Solicita a través del sitio web de Inland Revenue correspondiente a tu categoría:",
+        "irdStep3OnlineCat1": "Recién Llegado a Nueva Zelanda", "irdStep3OnlineCat2": "Viviendo en Nueva Zelanda y No Recién Llegado", "irdStep3OnlineCat3": "Viviendo en el Extranjero",
+        "irdStep3InPerson": "<strong>Verificación en Persona:</strong> Si solicitas como 'viviendo en Nueva Zelanda y no recién llegado', después de la presentación en línea, visita un agente de licencias de conducir de AA dentro de los 60 días con tus documentos originales para la verificación de identidad.", "irdStep3Email": "<strong>Envío por Correo Electrónico:</strong> Si solicitas desde el extranjero, completa el formulario IR742 y envíalo por correo electrónico con documentos escaneados a [dirección de correo electrónico protegida]",
+        "irdStep4Title": "Paso 4: Recibe tu Número IRD",
+        "irdStep4Desc": "Después de una solicitud y verificación exitosas:",
+        "irdStep4Processing": "<strong>Tiempo de Procesamiento:</strong> Generalmente, dentro de 2 días hábiles si se aplica en línea; hasta 10 días hábiles por correo.", "irdStep4Delivery": "<strong>Entrega:</strong> Recibirás tu número IRD por correo electrónico, mensaje de texto o correo postal, según el método elegido.",
+        "bankAccountTitle": "Instrucciones Detalladas Sobre Cómo Abrir una Cuenta Bancaria",
+        "bankAccountIntro": "Abrir una cuenta bancaria para estudiantes en Nueva Zelanda es un paso fundamental para administrar tus finanzas durante tus estudios. Te permite manejar los pagos de matrícula, recibir fondos desde casa, pagar los gastos diarios e incluso obtener ingresos de un trabajo a tiempo parcial. Además, tener una cuenta bancaria local te ayuda a evitar las comisiones por transacciones internacionales y simplifica las transferencias de dinero.",
+        "bankAccountGuideDesc": "Esta guía proporciona instrucciones detalladas paso a paso para ayudarte a abrir una cuenta bancaria para estudiantes en Nueva Zelanda, asegurando un proceso fluido y eficiente.",
+        "bankAccountPopularTitle": "Cuentas Bancarias Populares para Estudiantes en Nueva Zelanda",
+        "bankAccountPopularDesc": "Aquí hay algunos bancos que ofrecen cuentas amigables para estudiantes:",
+        "bankAccountANZ": "Cuenta ANZ Jumpstart", "bankAccountWestpac": "Cuenta de Estudiante Internacional Westpac", "bankAccountASB": "Cuenta Terciaria ASB/ Cuenta de Estudiante Internacional ASB", "bankAccountBNZ": "Cuenta BNZ YouMoney", "bankAccountKiwibank": "Cuenta Kiwibank FreeUp",
+        "bankAccountNeededTitle": "Qué Necesitarás para Abrir una Cuenta Bancaria de Estudiante",
+        "bankAccountNeededDesc": "La mayoría de los bancos en Nueva Zelanda requieren los siguientes documentos:",
+        "bankAccountNeededDoc1": "<strong>Pasaporte Válido:</strong> Sirve como tu identificación principal.", "bankAccountNeededDoc2": "<strong>Visa de Estudiante:</strong> Generalmente se requiere una visa válida por al menos seis meses.", "bankAccountNeededDoc3": "<strong>Prueba de Inscripción:</strong> Como tu Oferta de Plaza o tarjeta de ID de estudiante.", "bankAccountNeededDoc4": "<strong>Prueba de Dirección en Nueva Zelanda:</strong> Podría ser un contrato de arrendamiento, factura de servicios públicos o una carta de tu institución confirmando tu residencia.", "bankAccountNeededDoc5": "<strong>Número de Identificación Fiscal:</strong> De tu país de origen y/o tu número IRD (Departamento de Impuestos Internos) de Nueva Zelanda.",
+        "bankAccountStepsTitle": "Pasos para Abrir una Cuenta Bancaria de Estudiante",
+        "bankAccountStep1Choose": "Elige un Banco:", "bankAccountStep1ChooseDesc": "Investiga los bancos que ofrecen cuentas para estudiantes y compara sus características.",
+        "bankAccountStep2Apply": "Solicita en Línea o en Sucursal:",
+        "bankAccountStep2OnlineTitle": "En Línea:", "bankAccountStep2OnlineDesc": "Algunos bancos te permiten iniciar el proceso de solicitud en línea, incluso antes de llegar a Nueva Zelanda.", "bankAccountStep2InBranchTitle": "En Sucursal:", "bankAccountStep2InBranchDesc": "Visita una sucursal local con tus documentos. Es recomendable programar una cita con anticipación.",
+        "bankAccountStep3Complete": "Completa la Solicitud:", "bankAccountStep3CompleteDesc": "Llena los formularios necesarios y proporciona tus documentos.", "bankAccountStep4Activate": "Activa tu Cuenta:", "bankAccountStep4ActivateDesc": "Una vez aprobada, recibirás los detalles de tu cuenta y la tarjeta de débito.",
+        "realmeTitle": "Cómo crear una cuenta realme",
+        "realmeIntro": "Ve al siguiente enlace:", "realmeLinkText": "RealMe - Iniciar Sesión",
+        "realmeFollowSteps": "Sigue los pasos a continuación para crear tu perfil RealMe:",
+        "realmeStep1": "Selecciona Crear tu inicio de sesión RealMe.", "realmeStep2": "Configura tu cuenta RealMe mediante:",
+        "realmeStep2Email": "proporcionando tu dirección de correo electrónico", "realmeStep2Username": "proporcionando un nombre de usuario", "realmeStep2Password": "proporcionando una contraseña", "realmeStep2Security": "eligiendo 3 preguntas de seguridad y proporcionando respuestas", "realmeStep2Captcha": "demostrando que eres humano – ingresa los caracteres que ves en la imagen.",
+        "realmeStep3": "Acepta los Términos de uso y selecciona Continuar.", "realmeStep4": "Acepta el descargo de responsabilidad de seguridad de la cuenta para crear tu perfil de Inmigración en Línea.", "realmeStep5": "Serás redirigido a la página de Inmigración en Línea. Ingresa un nombre para mostrar (puede ser diferente a tu nombre de usuario de RealMe) y tu dirección de correo electrónico.", "realmeStep6": "Elige Aceptar y continuar.", "realmeStep7": "Recibirás 2 correos electrónicos:",
+        "realmeStep7Email1": "un correo electrónico de RealMe para decir que tu Registro fue exitoso, y", "realmeStep7Email2": "un correo electrónico de Inmigración en Línea para verificar tu cuenta.", "realmeStep7Spam": "Revisa tu correo no deseado si no has recibido un correo electrónico.",
+        "realmeStep8": "Selecciona el Enlace de Verificación en el correo electrónico de Inmigración en Línea para activar tu cuenta. Luego sigue los enlaces proporcionados para verificar tu cuenta.", "realmeStep9": "Selecciona Ver mi cuenta y luego Visa de Visitante para completar el formulario de solicitud en línea.", "realmeStep10": "Una vez que hayas completado el proceso de creación de la cuenta en línea, puedes recibir un correo electrónico mencionando que tendrás que visitar el centro AA más cercano para que te tomen una foto dentro de los 15 días para que coincida con tu perfil de Realme. (Asegúrate de anotar el código en el correo electrónico ya que lo necesitarás en el centro AA como referencia)", "realmeStep11": "Una vez procesada la foto, recibirás un correo electrónico dentro de los 10 días indicando que tu cuenta Realme ha sido creada.",
+        "campusTravelTitle": "Viajes Intercampus", "mapPlaceholderOverview": "[Mapa General de los Campus City, Grafton y Newmarket]",
+        "walking": "Caminando:", "bus": "Autobús:",
+        "campusTravelCityGraftonTitle": "City &harr; Grafton:", "campusTravelCityGraftonWalk": "Aproximadamente 1.3 KM, unos 15 minutos.", "campusTravelCityGraftonBus": "InnerLink (INN) proporciona servicio directo entre los campus.",
+        "campusTravelCityNewmarketTitle": "City &harr; Newmarket:", "campusTravelCityNewmarketWalk": "Aproximadamente 2 KM, unos 30 minutos.", "campusTravelCityNewmarketBus": "Las rutas 70 y 75 ofrecen conexiones directas.",
+        "campusTravelGraftonNewmarketTitle": "Grafton &harr; Newmarket:", "campusTravelGraftonNewmarketWalk": "Aproximadamente 1.1 KM, unos 20 minutos.", "campusTravelGraftonNewmarketBus": "Las rutas 70 y 75 proporcionan servicio entre estos campus.",
+        "campusTravelRealTime": "<em>Para horarios en tiempo real y planificación de rutas, considera usar el Planificador de Viajes de Auckland Transport o la aplicación Google MAP.</em>",
+        "campusTravelKeyBusStops": "Paradas de Autobús Clave", "campusTravelCityCampusStops": "Campus City (Campus Principal)",
+        "campusTravelStopUOA": "Universidad de Auckland (Parada ID: 1096):", "campusTravelStopUOALocation": "Ubicación: 12 Grafton Road, adyacente al Campus City.", "campusTravelStopUOARoutes": "Rutas de Autobús: 25B, 76, NX2, OUT, 101, 321, 27H, 27T, 27W, 70, 72X, 931, 933, 939.",
+        "campusTravelStopAuckUni": "Universidades de Auckland (Parada ID: 7147):", "campusTravelStopAuckUniLocation": "Ubicación: Symonds Street, directamente adyacente al Campus City.", "campusTravelStopAuckUniRoutes": "Rutas de Autobús: 22N, 22R, 24B, 24R, 25L, 27H, 27T, 27W, 70, 82, NX2, 802, 923, 924.",
+        "campusTravelStopWaterloo": "Waterloo Quadrant (Parada ID: 7144):", "campusTravelStopWaterlooLocation": "Ubicación: Aproximadamente a 5 minutos a pie del Campus City.", "campusTravelStopWaterlooRoutes": "Rutas de Autobús: 25B, 70, INN, OUT, 27H, 27T, 27W, 321, MEX, 72X, 931, 933, 939, 755.",
+        "campusTravelGraftonCampusStops": "Campus Grafton",
+        "campusTravelStopParkRd": "Park Road / Hospital de la Ciudad de Auckland:", "campusTravelStopParkRdLocation": "Ubicación: Aproximadamente a 3 minutos a pie del Campus Grafton.", "campusTravelStopParkRdRoutes": "Rutas de Autobús: 30, 309, 321, 75, 866, INN (InnerLink), RBW (Autobús Ferroviario del Oeste).",
+        "campusTravelNewmarketCampusStops": "Campus Newmarket",
+        "campusTravelStopMelrose": "Melrose Street:", "campusTravelStopMelroseLocation": "Ubicación: Aproximadamente a 2 minutos a pie del Campus Newmarket.", "campusTravelStopMelroseRoutes": "Rutas de Autobús: INN (InnerLink), 30, 64, 70, 75.",
+        "campusTravelStopKhyber": "Khyber Pass Road / Mountain Road:", "campusTravelStopKhyberLocation": "Ubicación: Aproximadamente a 4 minutos a pie del Campus Newmarket.", "campusTravelStopKhyberRoutes": "Rutas de Autobús: N10.",
+        "linksTitle": "ENLACES:", "linksAllMaps": "1. TODOS LOS MAPAS:", "linksParkingInfo": "2. INFORMACIÓN DE ESTACIONAMIENTO:",
+        "cityCampusTitle": "Mapa y Directorio del Campus City", "mapPlaceholderCity": "[Mapa Detallado del Campus City]",
+        "cityCampusDirectoryTitle": "Ubicaciones Clave / Directorio (Campus City)", "cityCampusDirectoryNote": "<em>(Nota: Esta es una representación parcial. Consulta el PDF original para la lista completa.)</em>",
+        "cityCampusParkingTitle": "Guía Rápida de Estacionamiento para Estudiantes en la Universidad de Auckland", "cityCampusParkingOGGB": "Campus City (Edificio Owen G. Glenn - OGGB)",
+        "location": "Ubicación:", "cityCampusParkingLocation": "Acceso por Grafton Road (frente a Stanley Street)", "availability": "Disponibilidad:", "cityCampusParkingAvailability": "5 niveles de estacionamiento, más de 1,000 espacios", "hours": "Horario:", "cityCampusParkingHoursWeekdays": "Días de semana: 6:30am–11:30pm", "cityCampusParkingHoursWeekends": "Fines de semana: 7am–11:00pm", "cityCampusParkingHoursClosed": "Cerrado en días festivos", "casualRates": "Tarifas Casuales:", "cityCampusParkingRate1": "$5/hora (hasta 5 horas)", "cityCampusParkingRate2": "Tarifa plana de $25 (5+ horas, Lun–Vie antes de las 4:30pm)", "cityCampusParkingRate3": "Tarifa plana de $6 (después de las 4:30pm entre semana / todo el día los fines de semana)", "payment": "Pago:", "cityCampusParkingPayment": "Paga en las máquinas cerca de los ascensores. Usa el ticket para salir. Se acepta EFTPOS (comisión de tarjeta de crédito 1.9%). Cargo por ticket perdido de $25.",
+        "mapPlaceholderCityRestaurants": "[Mapa de Restaurantes del Campus City]", "cityCampusRestaurantsNote": "PATIO DE COMIDAS. La caminata de 15 minutos es en el centro de la ciudad, donde hay aún más restaurantes.",
+        "graftonCampusTitle": "Mapa y Directorio del Campus Grafton", "mapPlaceholderGrafton": "[Mapa del Campus Grafton]",
+        "graftonCampusDirectoryTitle": "Directorio (Campus Grafton)", "graftonCampusDirectoryNote": "<em>(Consulta el PDF original para la lista completa.)</em>",
+        "newmarketCampusTitle": "Mapa y Directorio del Campus Newmarket", "mapPlaceholderNewmarket": "[Mapa del Campus Newmarket]",
+        "newmarketCampusDirectoryTitle": "Directorio (Campus Newmarket)", "newmarketCampusDirectoryNote": "<em>(Consulta el PDF original para la lista completa.)</em>",
+        "printerLocationsTitle": "Ubicaciones de Impresoras",
+        "printerLocationsDesc": "Dispositivos todo en uno capaces de imprimir, fotocopiar y escanear están disponibles en espacios de estudio, bibliotecas y alojamientos para estudiantes en todo el campus.",
+        "printingGuideTitle": "Impresión en la Universidad de Auckland (Para Estudiantes)",
+        "printingHowToPrint": "Cómo Imprimir",
+        "printingHowToLogin": "<strong>Inicia sesión:</strong> Usa tu Tarjeta del Campus o correo electrónico y contraseña de estudiante.", "printingHowToFunds": "<strong>Fondos:</strong> Asegúrate de tener un saldo positivo en tu cuenta de impresión de la Universidad.", "printingHowToLocations": "<strong>Ubicaciones:</strong> (Como se mencionó anteriormente).",
+        "printingFromPersonal": "Impresión desde Dispositivos Personales", "printingWebPrintService": "Servicio de Impresión Web:",
+        "printingWebPrintStep1": "Ve a papercut.auckland.ac.nz e inicia sesión.", "printingWebPrintStep2": "Selecciona 'Impresión Web' en el menú.", "printingWebPrintStep3": "Haz clic en 'Enviar un Trabajo'.", "printingWebPrintStep4": "Elige 'FollowMe-BW (virtual)' o 'FollowMe-Colour (virtual)' como tu impresora.", "printingWebPrintStep5": "Sigue las instrucciones para cargar tu documento y liberar el trabajo de impresión en cualquier impresora iniciando sesión con tu Tarjeta del Campus o credenciales.",
+        "printingCosts": "Costos de Impresión",
+        "printingCostBW": "<strong>Blanco y Negro:</strong> A4/A3: $0.10 por página. Doble cara: $0.20 por página.", "printingCostColour": "<strong>Color:</strong> A4/A3: $0.20 por página. Doble cara: $0.40 por página.",
+        "printingAddingFunds": "Agregar Fondos a tu Cuenta de Impresión",
+        "printingFundsEpos": "<strong>Estaciones ePOS:</strong> Ubicadas en el campus, incluyendo fuera de la Sala de Casos 3 en el Nivel 0.", "printingFundsOnline": "<strong>Transferencia en Línea:</strong> Transfiere fondos de tu 'saldo de copia' a 'saldo de impresión' a través de tu NetAccount.",
+        "footerText": "&copy; KitUp - Kit de Bienvenida Universitario. Información derivada del documento PDF proporcionado."
+    }
+    </script>
+
+    <script id="translations-fr" type="application/json">
+    {
+        "headerTitle": "KitUp",
+        "headerSubtitle": "DÉBALLEZ VOTRE BIENVENUE",
+        "logoPlaceholder": "[Logo KitUp]",
+        "navEnglish": "Anglais",
+        "navSpanish": "Espagnol",
+        "navFrench": "Français",
+        "navChinese": "中文",
+        "tocTitle": "Table des Matières",
+        "tocHeaderContent": "Contenu",
+        "tocHeaderPages": "Pages",
+        "tocItem1": "Liste de Contrôle Annuelle pour Nouveaux Étudiants", "tocItem1Pages": "2-4",
+        "tocItem2": "Liste de Contrôle d'Intégration pour Nouveaux Étudiants", "tocItem2Pages": "5-6",
+        "tocItem3": "Contacts d'Urgence et Services de Soutien", "tocItem3Pages": "7-8",
+        "tocItem4": "Guide de Sélection des Cours", "tocItem4Pages": "9-10",
+        "tocItem5": "Carte AT HOP et Réduction Étudiante", "tocItem5Pages": "11-16",
+        "tocItem6": "Configuration d'un Numéro IRD", "tocItem6Pages": "17-20",
+        "tocItem7": "Ouverture d'un Compte Bancaire", "tocItem7Pages": "21-22",
+        "tocItem8": "Création d'un Compte RealMe", "tocItem8Pages": "23-24",
+        "tocItem9": "Plans du Campus et Stationnement", "tocItem9Pages": "25-30",
+        "tocItem10": "Emplacements des Imprimantes et Guide d'Impression", "tocItem10Pages": "31-32",
+        "accommodationSupportTitle": "Support d'Hébergement",
+        "accSupportService": "Service", "accSupportLocation": "Emplacement", "accSupportContact": "Contact", "accSupportNotes": "Remarques",
+        "accUoASupport": "Support d'Hébergement UoA", "accUoALocation": "Solutions d'Hébergement, Bureau 219A, Niveau 2, Kate Edger Information Commons, Auckland 1010, Nouvelle-Zélande, 86 Symonds", "accUoANotes": "Heures d'ouverture : Lundi au Vendredi, 8h30 - 17h00",
+        "accCarlawPark": "Village Étudiant Carlaw Park", "accCarlawParkLocation": "", "accCarlawParkContact": "Email : dsymonds@auckland.ac.nz, Tél. de service : 027 565 0442, Email : cpsv@auckland.ac.nz, Tél. de service : 027 257 2443", "accCarlawParkNotes": "",
+        "accGraftonHall": "Résidence Grafton", "accGraftonHallLocation": "", "accGraftonHallContact": "Email : graftonhall@auckland.ac.nz, Tél. de service : 021 478 069", "accGraftonHallNotes": "",
+        "accGraftonFlats": "Appartements Étudiants Grafton et Résidence Goldies", "accGraftonFlatsLocation": "", "accGraftonFlatsContact": "Email : graftonstudentflats@auckland.ac.nz, Tél. de service : 021 478 069", "accGraftonFlatsNotes": "",
+        "accORorkeHall": "Résidence O'Rorke", "accORorkeHallLocation": "", "accORorkeHallContact": "Email : ororke@auckland.ac.nz, Tél. de service : 021 989 637", "accORorkeHallNotes": "",
+        "accStuartMcCutcheon": "Maison Stuart McCutcheon", "accStuartMcCutcheonLocation": "", "accStuartMcCutcheonContact": "Email : smh@auckland.ac.nz, Tél. de service : 027 707 9813", "accStuartMcCutcheonNotes": "",
+        "accTeTirohanga": "Te Tirohanga o te Tōangaroa", "accTeTirohangaLocation": "", "accTeTirohangaContact": "Email : ttt@auckland.ac.nz, Tél. de service : 027 233 4612", "accTeTirohangaNotes": "",
+        "accUniHallTowers": "Tours University Hall et Maison Waikohanga", "accUniHallTowersLocation": "", "accUniHallTowersContact": "Email : universityhall@auckland.ac.nz, Tél. de service : 027 544 2520", "accUniHallTowersNotes": "",
+        "accWaiparuruHall": "Résidence Waipārūrū", "accWaiparuruHallLocation": "", "accWaiparuruHallContact": "Email : waiparuruhall@auckland.ac.nz, Tél. de service : 021 989 638", "accWaiparuruHallNotes": "",
+        "courseSelectionTitle": "Guide de Sélection des Cours",
+        "courseSelectionIntro": "La sélection des cours est plus qu'une simple liste de contrôle – c'est votre premier pas vers un nouveau chapitre passionnant. Choisissez ce qui vous inspire, faites confiance à votre instinct et sachez que nous sommes là pour vous accompagner à chaque étape.",
+        "courseSelectionSubtitle": "Guide étape par étape pour la sélection des cours à Waipapa Taumata Rau | L'Université d'Auckland",
+        "courseSelPhase": "Phase", "courseSelWhatToDo": "À faire", "courseSelWhereHow": "Où / comment", "courseSelWhyMatters": "Pourquoi c'est important",
+        "courseSelPhase1": "1 Avoir une vue d'ensemble", "courseSelWhat1": "- Téléchargez le Planificateur de Diplôme pour votre programme/spécialisation<br>- Parcourez le prospectus de la faculté et les manuels des “Cours Fondamentaux”", "courseSelWhere1": "Site web de la faculté → section “Planificateurs de diplôme” (L'Université d'Auckland)", "courseSelWhy1": "Confirme tous les cours obligatoires (fondamentaux) et la séquence typique pour ne pas oublier de prérequis.",
+        "courseSelPhase2": "2 Vérifier les règlements officiels", "courseSelWhat2": "- Ouvrez la page des Règlements du Programme dans le Calendrier<br>- Notez les totaux de crédits, les règles de niveau (I/II/III/PG), les seuils de GPA et tout projet de fin d'études/stage.", "courseSelWhere2": "Calendrier (via sso.auckland ou SSO ‘Conseils et informations sur les cours’) (L'Université d'Auckland)", "courseSelWhy2": "Les règlements priment sur tout ; les connaître évite les mauvaises surprises en fin de diplôme.",
+        "courseSelPhase3": "3 Listez d'abord vos cours de base", "courseSelWhat3": "À partir des étapes 1 et 2, créez une liste courante de chaque document de base (code du cours + points + prérequis/co-requis)", "courseSelWhere3": "Document/feuille simple ; vous les ferez glisser dans chaque semestre à l'étape 5.", "courseSelWhy3": "Vous permet de rester concentré sur les « incontournables » avant les « agréables à avoir ».",
+        "courseSelPhase4": "4 Vérifiez les prérequis et l'ordre", "courseSelWhat4": "Pour chaque document de base, ouvrez son plan de cours → notez les prérequis, les co-requis et les étapes recommandées.", "courseSelWhere4": "Recherche « Plans de cours » SSO (Université d'Auckland)", "courseSelWhy4": "Empêche les blocages d'inscription causés par des prérequis manquants.",
+        "courseSelPhase5": "5 Élaborez un plan pluriannuel", "courseSelWhat5": "- Connectez-vous au planificateur d'horaires dans SSO et créez des exemples d'horaires pour l'année à venir (ou l'ensemble du diplôme si vous le souhaitez).<br>- Faites glisser les documents de base dans les semestres recommandés ; comblez les lacunes avec des cours à option ou des GenEds.", "courseSelWhere5": "SSO → Planificateur d'horaires (Université d'Auckland)", "courseSelWhy5": "Visualise les conflits et l'équilibre de la charge de travail, montrant si tout s'adaptera réellement.",
+        "courseSelPhase6": "6 Validez avec un conseiller", "courseSelWhat6": "- Envoyez un e-mail/visitez un Student Hub ou une session de conseil pédagogique de la faculté ; apportez votre plan.", "courseSelWhere6": "AskAuckland → réservation de conseils pédagogiques (Université d'Auckland)", "courseSelWhy6": "Le personnel peut repérer les règles cachées (par exemple, les documents de cohorte) et approuver les variantes.",
+        "courseSelPhase7": "7 Inscrivez-vous tôt", "courseSelWhat7": "- Utilisez les services étudiants en ligne → Inscription pour ajouter des cours + laboratoires/tutoriels associés.", "courseSelWhere7": "SSO → assistant d'inscription (Université d'Auckland)", "courseSelWhy7": "Les cours populaires se remplissent rapidement ; les places dans les cours de base peuvent s'épuiser.",
+        "courseSelPhase8": "8 Confirmez les frais et la charge de points", "courseSelWhat8": "- Vérifiez l'estimation des frais et la limite de points d'inscription pour garantir le statut à temps plein (généralement ≥100 pts/an pour les étudiants de premier cycle).", "courseSelWhere8": "Onglet Finances SSO + page d'informations sur l'inscription (Université d'Auckland)", "courseSelWhy8": "Maintient l'éligibilité au visa/prêt et le calendrier d'obtention du diplôme.",
+        "courseSelPhase9": "9 Révisez juste avant le semestre", "courseSelWhat9": "- Rouvrez le planificateur d'horaires une semaine avant les cours pour les changements de salle/d'heure.<br>- Abandonnez/échangez pendant la fenêtre de modification d'inscription si nécessaire.", "courseSelWhere9": "SSO → affichage de l'horaire", "courseSelWhy9": "Détecte les changements d'horaire de dernière minute et vous permet de corriger les conflits sans pénalité.",
+        "proTipsTitle": "Conseils de pro",
+        "proTip1": "Mettez en favori les PDF des cours fondamentaux (par ex., Manuel Fondamental de l'École de Commerce) pour une référence rapide aux politiques et résultats d'apprentissage (L'Université d'Auckland).",
+        "proTip2": "Définissez des rappels de calendrier pour les dates d'ouverture des inscriptions et les dates limites pour ajouter/supprimer sans pénalité.",
+        "proTip3": "Gardez une liste de cours optionnels de secours, pratique lorsqu'un cours fondamental est complet ou reporté.",
+        "courseSelectionOutro": "Avec ce processus, vous chargerez toujours les matières fondamentales en premier, vérifierez les prérequis tôt et vous assurerez un emploi du temps sans conflit bien avant le début des cours. Bonne étude !",
+        "atCardTitle": "Tout sur la carte AT (transport public)",
+        "atCardWhatIs": "Qu'est-ce qu'une carte AT HOP ?",
+        "atCardWhatIsDesc": "Une carte AT HOP est une carte à puce prépayée et réutilisable qui vous permet de payer les bus, les trains et la plupart des services de ferry à Auckland. Elle offre des tarifs réduits par rapport aux paiements en espèces et facilite les déplacements des voyageurs fréquents.",
+        "atCardHowToUse": "Comment utiliser votre carte AT HOP",
+        "atCardTagOn": "1. Validez en Montant", "atCardTagOnLocate": "<strong>Localisez le Lecteur de Carte :</strong> En entrant dans le bus, la gare ou le terminal de ferry, trouvez le lecteur de carte AT HOP.", "atCardTagOnPresent": "<strong>Présentez Votre Carte :</strong> Maintenez votre carte HOP à plat contre le lecteur jusqu'à ce que vous entendiez un bip et voyiez une lumière verte. Cela indique une validation réussie.",
+        "atCardTagOff": "2. Validez en Descendant", "atCardTagOffLocate": "<strong>Trouvez le Lecteur de Sortie :</strong> Avant de quitter le véhicule ou la gare, localisez le lecteur de carte.", "atCardTagOffPresent": "<strong>Présentez Votre Carte à Nouveau :</strong> Maintenez votre carte contre le lecteur jusqu'à ce que vous entendiez un bip et voyiez une lumière verte. Cela enregistre votre sortie et garantit que le tarif correct vous est facturé.",
+        "atCardImportant": "Important :", "atCardImportantDesc": "Validez toujours à l'entrée et à la sortie avec la même carte ou le même appareil pour éviter de payer un tarif par défaut.",
+        "atCardRechargeTitle": "Comment Recharger Votre Carte AT HOP",
+        "atCardOnlineTopUp": "Recharge en Ligne",
+        "atCardOnlineStep1": "<strong>Enregistrez Votre Carte :</strong> Créez un compte MyAT et enregistrez votre carte HOP.", "atCardOnlineStep2": "<strong>Connectez-vous :</strong> Accédez à votre compte MyAT.", "atCardOnlineStep3": "<strong>Sélectionnez Recharger :</strong> Choisissez la carte que vous souhaitez recharger et sélectionnez 'Recharger en ligne'.", "atCardOnlineStep4": "<strong>Entrez le Montant et les Détails de Paiement :</strong> Spécifiez le montant et fournissez les informations de votre carte de crédit ou de débit.", "atCardOnlineStep5": "<strong>Confirmez et Activez :</strong> Après le paiement, validez à n'importe quel lecteur AT HOP dans les 60 jours pour activer la recharge.", "atCardOnlineNote": "Remarque :", "atCardOnlineNoteDesc": "Les recharges en ligne peuvent prendre jusqu'à 1 heure pour être disponibles.",
+        "atCardInPersonTopUp": "Recharge en Personne",
+        "atCardInPersonRetailers": "<strong>Détaillants :</strong> Rendez-vous chez un détaillant AT HOP.", "atCardInPersonMachines": "<strong>Distributeurs de Billets et de Recharge :</strong> Utilisez les distributeurs situés dans les gares et sur le Northern Busway.", "atCardInPersonCenters": "<strong>Centres de Service Clientèle :</strong> Rechargez dans ces centres à travers Auckland.", "atCardInPersonTip": "Astuce : Les recharges en personne sont disponibles immédiatement.",
+        "atCardAutoTopUp": "Recharge Automatique",
+        "atCardAutoStep1": "<strong>Configurer :</strong> Dans votre compte MyAT, choisissez 'Configurer la recharge automatique'.", "atCardAutoStep2": "<strong>Configurer les Paramètres :</strong> Sélectionnez un seuil de solde minimum et un montant de recharge.", "atCardAutoStep3": "<strong>Détails de Paiement :</strong> Fournissez les informations de votre carte de crédit/débit ou de votre compte bancaire.", "atCardAutoStep4": "<strong>Activer :</strong> Validez à un lecteur AT HOP dans les 60 jours pour activer la recharge automatique.", "atCardAutoStep5": "<strong>Avantage :</strong> La recharge automatique garantit que vous ne manquerez jamais de solde.",
+        "atCardTertiaryConcessionTitle": "Êtes-vous Éligible à la Réduction Étudiante ?",
+        "atCardStudentCriteria": "Critères Étudiants :",
+        "atCardCriteriaFullTime": "Vous devez être un <strong>étudiant à temps plein</strong>.", "atCardCriteriaNZQA": "Inscrit et suivant un cours d'enseignement supérieur accrédité et approuvé par la NZQA.", "atCardCriteriaATApproved": "Étudiant dans un établissement d'enseignement supérieur approuvé par AT.", "atCardCriteriaFeesFree": "Les étudiants éligibles à l'enseignement gratuit peuvent également être éligibles.",
+        "atCardApprovedProviderCriteria": "Critères des fournisseurs d'enseignement supérieur approuvés par AT :",
+        "atCardProviderMinEdu": "Enregistré auprès du ministère de l'Éducation.", "atCardProviderNZQA": "Enregistré auprès de la NZQA (pour les PTE et les TITO).", "atCardProviderOffers": "Propose des cours d'enseignement supérieur approuvés et accrédités par la NZQA.", "atCardProviderLocated": "Situé dans la région d'Auckland.", "atCardProviderSigned": "A signé un accord de participation à l'enseignement supérieur avec AT.", "atCardProviderAppApproved": "Les « fournisseurs approuvés par l'application » sont en outre autorisés pour la vérification de l'application mobile AT.",
+        "atCardDefiningFullTime": "Définition de « l'étudiant à temps plein » (basée sur l'EFTS) pour la concession tertiaire :",
+        "atCardDefiningFullTimeDesc": "AT utilise la valeur d'équivalent étudiant à temps plein (EFTS) de la Commission de l'enseignement supérieur (TEC).",
+        "atCardFullTimeFullYear": "<strong>Temps plein/Année complète :</strong> Minimum 0,8 EFTS sur au moins 32 semaines consécutives au cours d'une année universitaire complète.", "atCardFullTimePartYear": "<strong>Temps plein/Temps partiel (Semestre) :</strong> Minimum 0,4 EFTS sur au moins 16 semaines consécutives au cours de l'année universitaire.", "atCardLimitedFullTime": "<strong>Temps plein limité :</strong> Répond à la définition de StudyLink et dispose d'une lettre d'approbation de StudyLink.",
+        "atCardGettingConcession": "Obtenir votre concession tertiaire",
+        "atCardGettingConcessionDesc": "Pour charger une concession tertiaire sur votre carte AT HOP, votre éligibilité doit d'abord être confirmée :",
+        "atCardStickerTitle": "Autocollant d'identification tertiaire AT",
+        "atCardStickerApplied": "Appliqué sur votre carte d'étudiant tertiaire valide.", "atCardStickerIssued": "Délivré par votre fournisseur tertiaire agréé AT.", "atCardStickerPink": "<strong>Autocollant rose :</strong> Premier semestre uniquement.", "atCardStickerGreen": "<strong>Autocollant vert :</strong> Deuxième semestre ou année complète.", "atCardStickerRequires": "Nécessite un reçu/certificat de frais de votre fournisseur.", "atCardStickerValid": "Concession valide jusqu'à l'expiration de votre carte d'étudiant ou de votre autocollant (la première des deux éventualités).", "atCardStickerFullYear": "Autocollant annuel (expire le 31 mars de l'année suivante) si inscrit pour un minimum de 32 semaines consécutives.", "atCardStickerPartYear": "Autocollant semestriel si les conditions pour un semestre sont remplies (par exemple, 0,4 EFTS pour 16 semaines).",
+        "atCardStickerShowEligible": "Afficher le statut « Éligible » dans l'application (uniquement pour les « Fournisseurs approuvés par l'application »).", "atCardStickerConcessionUpTo": "La concession peut être disponible jusqu'à 3 ans, sous réserve d'une revalidation continue de l'éligibilité par votre fournisseur.", "atCardStickerEnrollmentChanges": "Si votre inscription change (par exemple, si les EFTS tombent en dessous de 0,4 pour un semestre), votre fournisseur en informe AT et votre concession peut expirer après un préavis de 2 semaines.",
+        "atCardMobileApp": "Application mobile AT",
+        "atCardStickerNoteTitle": "Remarque :", "atCardStickerNoteDesc": "Si vous ne fréquentez pas un fournisseur approuvé par l'application ou si vous ne possédez pas de smartphone compatible, vous devez utiliser la méthode de l'autocollant d'identification tertiaire AT.",
+        "atCardCoverageExclusions": "Couverture et exclusions de la concession tertiaire",
+        "atCardWhatsIncluded": "Ce qui est inclus :",
+        "atCardIncludedDiscount": "La réduction s'applique aux voyages effectués avec une carte AT HOP chargée d'une concession tertiaire.", "atCardIncludedValidOn": "Valable dans les trains et certains services de bus et de ferry.", "atCardIncludedFares": "Les tarifs sont inférieurs d'au moins 20 % au tarif adulte d'un aller simple AT HOP.", "atCardIncludedAvailable": "Disponible sur les services exploités sous contrat entre AT et les opérateurs de transport public.",
+        "atCardWhoNotEligible": "Qui n'est PAS éligible à la concession tertiaire :",
+        "atCardNotEligiblePartTime": "Étudiants à temps partiel.", "atCardNotEligibleYouth": "Étudiants participant à la Garantie Jeunesse, aux Opportunités de Formation Axées sur la Fondation ou à des cours similaires financés par le gouvernement.", "atCardNotEligibleCorrespondence": "Ceux qui étudient par correspondance, à distance ou qui reçoivent un financement gouvernemental pour le transport.",
+        "atCardServiceExclusions": "Exclusions de service pour la concession tertiaire :",
+        "atCardServiceExclusionsDesc": "Certains services ne sont pas couverts. AT et les opérateurs peuvent ajouter/supprimer des itinéraires du programme sans préavis. En cas de doute, vérifiez auprès de l'opérateur.",
+        "atCardImportantConditions": "Conditions importantes pour la concession tertiaire",
+        "atCardAdultFareIf": "Vous paierez un <strong>tarif adulte</strong> si vous :",
+        "atCardAdultFareNoConcession": "N'avez pas de concession tertiaire chargée sur votre carte AT HOP.", "atCardAdultFareCannotConfirm": "Ne pouvez pas confirmer votre éligibilité via l'application mobile AT (le cas échéant).", "atCardAdultFareNoValidID": "Ne pouvez pas présenter une carte d'étudiant tertiaire valide avec un autocollant d'identification tertiaire AT valide.",
+        "atCardTermsRevision": "Auckland Transport peut réviser ces termes et conditions à tout moment et sans préavis. Les modifications prennent effet dès leur publication sur leur site Web.", "atCardFareSchemesReview": "AT révise régulièrement ses régimes de tarifs préférentiels, ce qui peut entraîner des modifications.",
+        "atCardFurtherInfo": "Informations complémentaires sur la concession tertiaire",
+        "atCardFurtherInfoApplication": "Pour le processus de demande, visitez la page « Concession pour étudiants du supérieur » sur le site Web d'Auckland Transport.", "atCardFurtherInfoOperators": "Certains opérateurs comme Fullers Ferries (www.fullers.co.nz) et SeaLink Ferries (www.sealink.co.nz) peuvent offrir leurs propres réductions pour étudiants du supérieur pour les services non contractés par AT.", "atCardFurtherInfoShuttle": "Vérifiez auprès de votre établissement d'enseignement supérieur les services de navette du campus, qui fonctionnent indépendamment de ce programme.",
+        "atCardSummaryNote": "<em>Ces informations sont un résumé. Pour des détails complets et à jour, veuillez consulter le site Web officiel d'Auckland Transport.</em>",
+        "irdTitle": "Guide Étape par Étape pour Configurer le Numéro IRD",
+        "irdIntro": "Pour travailler à temps partiel ou bénéficier d'avantages fiscaux en Nouvelle-Zélande en tant qu'étudiant, vous aurez besoin d'un numéro IRD (Inland Revenue Department). Cet identifiant unique est essentiel à des fins fiscales, garantissant que vous êtes imposé correctement et que vous pouvez accéder aux droits. Voici un guide complet pour vous aider à configurer votre numéro IRD :",
+        "irdStep1Title": "Étape 1 : Déterminez Votre Catégorie de Demande",
+        "irdStep1Cat1": "<strong>Nouvel Arrivant en Nouvelle-Zélande :</strong> Si vous êtes arrivé récemment et que vous êtes dans le délai spécifié par votre visa, postulez en tant que 'nouvel arrivant'.", "irdStep1Cat2": "<strong>Vivant en Nouvelle-Zélande et Non Nouvel Arrivant :</strong> Si vous êtes en Nouvelle-Zélande au-delà de la date d'arrivée de votre visa ou si vous êtes citoyen/résident néo-zélandais, utilisez cette catégorie.", "irdStep1Cat3": "<strong>Vivant à l'Étranger :</strong> Si vous postulez avant d'arriver en Nouvelle-Zélande, c'est votre catégorie.",
+        "irdStep2Title": "Étape 2 : Rassemblez les Documents Requis",
+        "irdStep2Desc": "Selon votre catégorie de demande, vous aurez besoin de :",
+        "irdStep2Doc1": "<strong>Pièce d'Identité avec Photo :</strong> Un passeport valide ou une autre pièce d'identité approuvée.", "irdStep2Doc2": "<strong>Preuve d'Adresse :</strong> Telle qu'une facture de services publics ou un contrat de location.", "irdStep2Doc3": "<strong>Détails du Visa :</strong> Votre numéro de demande d'Immigration Nouvelle-Zélande.", "irdStep2Doc4": "<strong>Numéro d'Identification Fiscale (NIF) :</strong> De votre pays d'origine, si disponible.", "irdStep2Doc5": "<strong>Compte Bancaire Néo-Zélandais :</strong> Preuve d'un compte entièrement fonctionnel ou d'une diligence raisonnable client complétée (formulaire IR997).",
+        "irdStep2TranslationNote": "Assurez-vous que tous les documents sont en anglais ou accompagnés de traductions certifiées.",
+        "irdStep3Title": "Étape 3 : Soumettez Votre Demande",
+        "irdStep3OnlineTitle": "Demande en Ligne :", "irdStep3OnlineDesc": "Postulez via le site Web d'Inland Revenue correspondant à votre catégorie :",
+        "irdStep3OnlineCat1": "Nouvel Arrivant en Nouvelle-Zélande", "irdStep3OnlineCat2": "Vivant en Nouvelle-Zélande et Non Nouvel Arrivant", "irdStep3OnlineCat3": "Vivant à l'Étranger",
+        "irdStep3InPerson": "<strong>Vérification en Personne :</strong> Si vous postulez en tant que 'vivant en Nouvelle-Zélande et non nouvel arrivant', après la soumission en ligne, rendez-vous chez un agent de permis de conduire AA dans les 60 jours avec vos documents originaux pour vérification d'identité.", "irdStep3Email": "<strong>Soumission par Courriel :</strong> Si vous postulez depuis l'étranger, remplissez le formulaire IR742 et envoyez-le par courriel avec les documents numérisés à [adresse électronique protégée]",
+        "irdStep4Title": "Étape 4 : Recevez Votre Numéro IRD",
+        "irdStep4Desc": "Après une demande et une vérification réussies :",
+        "irdStep4Processing": "<strong>Délai de Traitement :</strong> Généralement, dans les 2 jours ouvrables si la demande est faite en ligne ; jusqu'à 10 jours ouvrables par la poste.", "irdStep4Delivery": "<strong>Livraison :</strong> Vous recevrez votre numéro IRD par courriel, SMS ou courrier postal, selon la méthode choisie.",
+        "bankAccountTitle": "Instructions Détaillées sur l'Ouverture d'un Compte Bancaire",
+        "bankAccountIntro": "Ouvrir un compte bancaire étudiant en Nouvelle-Zélande est une étape fondamentale pour gérer vos finances pendant vos études. Cela vous permet de gérer les paiements des frais de scolarité, de recevoir des fonds de chez vous, de payer les dépenses quotidiennes et même de gagner un revenu d'un travail à temps partiel. De plus, avoir un compte bancaire local vous aide à éviter les frais de transaction internationaux et simplifie les transferts d'argent.",
+        "bankAccountGuideDesc": "Ce guide fournit des instructions détaillées étape par étape pour vous aider à ouvrir un compte bancaire étudiant en Nouvelle-Zélande, garantissant un processus fluide et efficace.",
+        "bankAccountPopularTitle": "Comptes Bancaires Étudiants Populaires en Nouvelle-Zélande",
+        "bankAccountPopularDesc": "Voici quelques banques qui proposent des comptes adaptés aux étudiants :",
+        "bankAccountANZ": "Compte ANZ Jumpstart", "bankAccountWestpac": "Compte Étudiant International Westpac", "bankAccountASB": "Compte Tertiaire ASB/ Compte Étudiant International ASB", "bankAccountBNZ": "Compte BNZ YouMoney", "bankAccountKiwibank": "Compte Kiwibank FreeUp",
+        "bankAccountNeededTitle": "Ce Dont Vous Aurez Besoin pour Ouvrir un Compte Bancaire Étudiant",
+        "bankAccountNeededDesc": "La plupart des banques en Nouvelle-Zélande exigent les documents suivants :",
+        "bankAccountNeededDoc1": "<strong>Passeport Valide :</strong> Sert de pièce d'identité principale.", "bankAccountNeededDoc2": "<strong>Visa Étudiant :</strong> Un visa valide pour au moins six mois est généralement requis.", "bankAccountNeededDoc3": "<strong>Preuve d'Inscription :</strong> Telle que votre Offre de Place ou carte d'étudiant.", "bankAccountNeededDoc4": "<strong>Preuve d'Adresse en Nouvelle-Zélande :</strong> Cela peut être un contrat de location, une facture de services publics ou une lettre de votre établissement confirmant votre résidence.", "bankAccountNeededDoc5": "<strong>Numéro d'Identification Fiscale :</strong> De votre pays d'origine et/ou votre numéro IRD (Inland Revenue Department) néo-zélandais.",
+        "bankAccountStepsTitle": "Étapes pour Ouvrir un Compte Bancaire Étudiant",
+        "bankAccountStep1Choose": "Choisissez une Banque :", "bankAccountStep1ChooseDesc": "Recherchez les banques qui proposent des comptes étudiants et comparez leurs fonctionnalités.",
+        "bankAccountStep2Apply": "Postulez en Ligne ou en Agence :",
+        "bankAccountStep2OnlineTitle": "En Ligne :", "bankAccountStep2OnlineDesc": "Certaines banques vous permettent de démarrer le processus de demande en ligne, même avant d'arriver en Nouvelle-Zélande.", "bankAccountStep2InBranchTitle": "En Agence :", "bankAccountStep2InBranchDesc": "Rendez-vous dans une agence locale avec vos documents. Il est conseillé de prendre rendez-vous à l'avance.",
+        "bankAccountStep3Complete": "Complétez la Demande :", "bankAccountStep3CompleteDesc": "Remplissez les formulaires nécessaires et fournissez vos documents.", "bankAccountStep4Activate": "Activez Votre Compte :", "bankAccountStep4ActivateDesc": "Une fois approuvé, vous recevrez les détails de votre compte et votre carte de débit.",
+        "realmeTitle": "Comment créer un compte realme",
+        "realmeIntro": "Allez sur le lien ci-dessous :", "realmeLinkText": "RealMe - Connexion",
+        "realmeFollowSteps": "Suivez les étapes ci-dessous pour créer votre profil RealMe :",
+        "realmeStep1": "Sélectionnez Créer votre identifiant RealMe.", "realmeStep2": "Configurez votre compte RealMe en :",
+        "realmeStep2Email": "fournissant votre adresse e-mail", "realmeStep2Username": "fournissant un nom d'utilisateur", "realmeStep2Password": "fournissant un mot de passe", "realmeStep2Security": "choisissant 3 questions de sécurité et en fournissant les réponses", "realmeStep2Captcha": "prouvant que vous êtes un humain – entrez les caractères que vous voyez dans l'image.",
+        "realmeStep3": "Acceptez les Conditions d'utilisation et sélectionnez Continuer.", "realmeStep4": "Acceptez la clause de non-responsabilité en matière de sécurité du compte pour créer votre profil Immigration Online.", "realmeStep5": "Vous serez redirigé vers la page Immigration Online. Entrez un nom d'affichage (il peut être différent de votre nom d'utilisateur RealMe) et votre adresse e-mail.", "realmeStep6": "Choisissez Accepter et continuer.", "realmeStep7": "Vous recevrez 2 e-mails :",
+        "realmeStep7Email1": "un e-mail de RealMe indiquant que votre inscription a réussi, et", "realmeStep7Email2": "un e-mail d'Immigration Online pour vérifier votre compte.", "realmeStep7Spam": "Vérifiez votre dossier de courrier indésirable si vous n'avez pas reçu d'e-mail.",
+        "realmeStep8": "Sélectionnez le Lien de Vérification dans l'e-mail d'Immigration Online pour activer votre compte. Suivez ensuite les liens fournis pour vérifier votre compte.", "realmeStep9": "Sélectionnez Voir mon compte, puis Visa de visiteur pour remplir le formulaire de demande en ligne.", "realmeStep10": "Une fois le processus de création de compte en ligne terminé, vous pourriez recevoir un e-mail vous informant que vous devrez vous rendre au centre AA le plus proche pour faire prendre votre photo dans les 15 jours afin qu'elle corresponde à votre profil Realme. (Assurez-vous de noter le code dans l'e-mail car vous en aurez besoin au centre AA comme référence)", "realmeStep11": "Une fois la photo traitée, vous recevrez un e-mail dans les 10 jours vous informant que votre compte Realme a été créé.",
+        "campusTravelTitle": "Déplacements Inter-Campus", "mapPlaceholderOverview": "[Plan Général des Campus City, Grafton et Newmarket]",
+        "walking": "À pied :", "bus": "Bus :",
+        "campusTravelCityGraftonTitle": "City &harr; Grafton :", "campusTravelCityGraftonWalk": "Environ 1,3 KM, environ 15 minutes.", "campusTravelCityGraftonBus": "InnerLink (INN) assure un service direct entre les campus.",
+        "campusTravelCityNewmarketTitle": "City &harr; Newmarket :", "campusTravelCityNewmarketWalk": "Environ 2 KM, environ 30 minutes.", "campusTravelCityNewmarketBus": "Les lignes 70 et 75 offrent des liaisons directes.",
+        "campusTravelGraftonNewmarketTitle": "Grafton &harr; Newmarket :", "campusTravelGraftonNewmarketWalk": "Environ 1,1 KM, environ 20 minutes.", "campusTravelGraftonNewmarketBus": "Les lignes 70 et 75 assurent la liaison entre ces campus.",
+        "campusTravelRealTime": "<em>Pour les horaires en temps réel et la planification d'itinéraires, envisagez d'utiliser le planificateur de trajets d'Auckland Transport ou l'application Google MAP.</em>",
+        "campusTravelKeyBusStops": "Arrêts de Bus Clés", "campusTravelCityCampusStops": "Campus City (Campus Principal)",
+        "campusTravelStopUOA": "Université d'Auckland (Arrêt ID : 1096) :", "campusTravelStopUOALocation": "Emplacement : 12 Grafton Road, adjacent au Campus City.", "campusTravelStopUOARoutes": "Lignes de Bus : 25B, 76, NX2, OUT, 101, 321, 27H, 27T, 27W, 70, 72X, 931, 933, 939.",
+        "campusTravelStopAuckUni": "Universités d'Auckland (Arrêt ID : 7147) :", "campusTravelStopAuckUniLocation": "Emplacement : Symonds Street, directement adjacent au Campus City.", "campusTravelStopAuckUniRoutes": "Lignes de Bus : 22N, 22R, 24B, 24R, 25L, 27H, 27T, 27W, 70, 82, NX2, 802, 923, 924.",
+        "campusTravelStopWaterloo": "Waterloo Quadrant (Arrêt ID : 7144) :", "campusTravelStopWaterlooLocation": "Emplacement : À environ 5 minutes à pied du Campus City.", "campusTravelStopWaterlooRoutes": "Lignes de Bus : 25B, 70, INN, OUT, 27H, 27T, 27W, 321, MEX, 72X, 931, 933, 939, 755.",
+        "campusTravelGraftonCampusStops": "Campus Grafton",
+        "campusTravelStopParkRd": "Park Road / Hôpital de la Ville d'Auckland :", "campusTravelStopParkRdLocation": "Emplacement : À environ 3 minutes à pied du Campus Grafton.", "campusTravelStopParkRdRoutes": "Lignes de Bus : 30, 309, 321, 75, 866, INN (InnerLink), RBW (Bus Ferroviaire de l'Ouest).",
+        "campusTravelNewmarketCampusStops": "Campus Newmarket",
+        "campusTravelStopMelrose": "Melrose Street :", "campusTravelStopMelroseLocation": "Emplacement : À environ 2 minutes à pied du Campus Newmarket.", "campusTravelStopMelroseRoutes": "Lignes de Bus : INN (InnerLink), 30, 64, 70, 75.",
+        "campusTravelStopKhyber": "Khyber Pass Road / Mountain Road :", "campusTravelStopKhyberLocation": "Emplacement : À environ 4 minutes à pied du Campus Newmarket.", "campusTravelStopKhyberRoutes": "Lignes de Bus : N10.",
+        "linksTitle": "LIENS :", "linksAllMaps": "1. TOUS LES PLANS :", "linksParkingInfo": "2. INFORMATIONS SUR LE STATIONNEMENT :",
+        "cityCampusTitle": "Plan et Annuaire du Campus City", "mapPlaceholderCity": "[Plan Détaillé du Campus City]",
+        "cityCampusDirectoryTitle": "Lieux Clés / Annuaire (Campus City)", "cityCampusDirectoryNote": "<em>(Remarque : Ceci est une représentation partielle. Consultez le PDF original pour la liste complète.)</em>",
+        "cityCampusParkingTitle": "Guide Rapide du Stationnement Étudiant à l'Université d'Auckland", "cityCampusParkingOGGB": "Campus City (Bâtiment Owen G. Glenn - OGGB)",
+        "location": "Emplacement :", "cityCampusParkingLocation": "Accès via Grafton Road (en face de Stanley Street)", "availability": "Disponibilité :", "cityCampusParkingAvailability": "5 niveaux de stationnement, plus de 1 000 places", "hours": "Horaires :", "cityCampusParkingHoursWeekdays": "En semaine : 6h30–23h30", "cityCampusParkingHoursWeekends": "Week-ends : 7h00–23h00", "cityCampusParkingHoursClosed": "Fermé les jours fériés", "casualRates": "Tarifs Occasionnels :", "cityCampusParkingRate1": "5 $/heure (jusqu'à 5 heures)", "cityCampusParkingRate2": "Forfait de 25 $ (5+ heures, Lun–Ven avant 16h30)", "cityCampusParkingRate3": "Forfait de 6 $ (après 16h30 en semaine / toute la journée le week-end)", "payment": "Paiement :", "cityCampusParkingPayment": "Payez aux automates près des ascenseurs. Utilisez le ticket pour sortir. EFTPOS accepté (frais de carte de crédit de 1,9 %). Frais de 25 $ pour ticket perdu.",
+        "mapPlaceholderCityRestaurants": "[Plan des Restaurants du Campus City]", "cityCampusRestaurantsNote": "AIRE DE RESTAURATION. La promenade de 15 minutes se trouve dans le centre-ville, où il y a encore plus de restaurants.",
+        "graftonCampusTitle": "Plan et Annuaire du Campus Grafton", "mapPlaceholderGrafton": "[Plan du Campus Grafton]",
+        "graftonCampusDirectoryTitle": "Annuaire (Campus Grafton)", "graftonCampusDirectoryNote": "<em>(Consultez le PDF original pour la liste complète.)</em>",
+        "newmarketCampusTitle": "Plan et Annuaire du Campus Newmarket", "mapPlaceholderNewmarket": "[Plan du Campus Newmarket]",
+        "newmarketCampusDirectoryTitle": "Annuaire (Campus Newmarket)", "newmarketCampusDirectoryNote": "<em>(Consultez le PDF original pour la liste complète.)</em>",
+        "printerLocationsTitle": "Emplacements des Imprimantes",
+        "printerLocationsDesc": "Des appareils tout-en-un capables d'imprimer, de photocopier et de numériser sont disponibles dans les espaces d'étude, les bibliothèques et les logements étudiants sur tout le campus.",
+        "printingGuideTitle": "Impression à l'Université d'Auckland (Pour les Étudiants)",
+        "printingHowToPrint": "Comment Imprimer",
+        "printingHowToLogin": "<strong>Connectez-vous :</strong> Utilisez votre Carte de Campus ou votre e-mail et mot de passe étudiant.", "printingHowToFunds": "<strong>Fonds :</strong> Assurez-vous d'avoir un solde positif sur votre compte d'impression universitaire.", "printingHowToLocations": "<strong>Emplacements :</strong> (Comme mentionné ci-dessus).",
+        "printingFromPersonal": "Impression depuis des Appareils Personnels", "printingWebPrintService": "Service d'Impression Web :",
+        "printingWebPrintStep1": "Allez sur papercut.auckland.ac.nz et connectez-vous.", "printingWebPrintStep2": "Sélectionnez 'Impression Web' dans le menu.", "printingWebPrintStep3": "Cliquez sur 'Soumettre un Travail'.", "printingWebPrintStep4": "Choisissez 'FollowMe-BW (virtuel)' ou 'FollowMe-Colour (virtuel)' comme imprimante.", "printingWebPrintStep5": "Suivez les instructions pour télécharger votre document et lancer le travail d'impression sur n'importe quelle imprimante en vous connectant avec votre Carte de Campus ou vos identifiants.",
+        "printingCosts": "Coûts d'Impression",
+        "printingCostBW": "<strong>Noir et Blanc :</strong> A4/A3 : 0,10 $ par page. Recto-verso : 0,20 $ par page.", "printingCostColour": "<strong>Couleur :</strong> A4/A3 : 0,20 $ par page. Recto-verso : 0,40 $ par page.",
+        "printingAddingFunds": "Ajouter des Fonds à Votre Compte d'Impression",
+        "printingFundsEpos": "<strong>Stations ePOS :</strong> Situées sur le campus, y compris à l'extérieur de la Salle de Cas 3 au Niveau 0.", "printingFundsOnline": "<strong>Transfert en Ligne :</strong> Transférez des fonds de votre 'solde de copie' vers votre 'solde d'impression' via votre NetAccount.",
+        "footerText": "&copy; KitUp - Kit de Bienvenue Universitaire. Informations dérivées du document PDF fourni."
+    }
+    </script>
+
+    <script id="translations-zh" type="application/json">
+    {
+        "headerTitle": "KitUp",
+        "headerSubtitle": "开启你的欢迎礼盒",
+        "logoPlaceholder": "[KitUp 标志]",
+        "navEnglish": "English",
+        "navSpanish": "Español",
+        "navFrench": "Français",
+        "navChinese": "中文",
+        "tocTitle": "目录",
+        "tocHeaderContent": "内容",
+        "tocHeaderPages": "页码",
+        "tocItem1": "新生全年清单", "tocItem1Pages": "2-4",
+        "tocItem2": "新生入学清单", "tocItem2Pages": "5-6",
+        "tocItem3": "紧急联系方式和支持服务", "tocItem3Pages": "7-8",
+        "tocItem4": "选课指南", "tocItem4Pages": "9-10",
+        "tocItem5": "AT HOP 卡和高等教育优惠", "tocItem5Pages": "11-16",
+        "tocItem6": "设置 IRD 号码", "tocItem6Pages": "17-20",
+        "tocItem7": "开设银行账户", "tocItem7Pages": "21-22",
+        "tocItem8": "创建 RealMe 账户", "tocItem8Pages": "23-24",
+        "tocItem9": "校园地图和停车", "tocItem9Pages": "25-30",
+        "tocItem10": "打印机位置和打印指南", "tocItem10Pages": "31-32",
+        "accommodationSupportTitle": "住宿支持",
+        "accSupportService": "服务", "accSupportLocation": "地点", "accSupportContact": "联系方式", "accSupportNotes": "备注",
+        "accUoASupport": "奥大住宿支持", "accUoALocation": "住宿解决方案，219A办公室，2楼，Kate Edger信息共享空间，奥克兰1010，新西兰，86 Symonds", "accUoANotes": "办公时间：周一至周五，上午8:30 - 下午5:00",
+        "accCarlawPark": "Carlaw Park 学生村", "accCarlawParkLocation": "", "accCarlawParkContact": "电子邮件：dsymonds@auckland.ac.nz，值班电话：027 565 0442，电子邮件：cpsv@auckland.ac.nz，值班电话：027 257 2443", "accCarlawParkNotes": "",
+        "accGraftonHall": "Grafton 宿舍", "accGraftonHallLocation": "", "accGraftonHallContact": "电子邮件：graftonhall@auckland.ac.nz，值班电话：021 478 069", "accGraftonHallNotes": "",
+        "accGraftonFlats": "Grafton 学生公寓和 Goldies Homestead", "accGraftonFlatsLocation": "", "accGraftonFlatsContact": "电子邮件：graftonstudentflats@auckland.ac.nz，值班电话：021 478 069", "accGraftonFlatsNotes": "",
+        "accORorkeHall": "O'Rorke 宿舍", "accORorkeHallLocation": "", "accORorkeHallContact": "电子邮件：ororke@auckland.ac.nz，值班电话：021 989 637", "accORorkeHallNotes": "",
+        "accStuartMcCutcheon": "Stuart McCutcheon 学生公寓", "accStuartMcCutcheonLocation": "", "accStuartMcCutcheonContact": "电子邮件：smh@auckland.ac.nz，值班电话：027 707 9813", "accStuartMcCutcheonNotes": "",
+        "accTeTirohanga": "Te Tirohanga o te Tōangaroa", "accTeTirohangaLocation": "", "accTeTirohangaContact": "电子邮件：ttt@auckland.ac.nz，值班电话：027 233 4612", "accTeTirohangaNotes": "",
+        "accUniHallTowers": "University Hall Towers 和 Waikohanga House", "accUniHallTowersLocation": "", "accUniHallTowersContact": "电子邮件：universityhall@auckland.ac.nz，值班电话：027 544 2520", "accUniHallTowersNotes": "",
+        "accWaiparuruHall": "Waipārūrū 宿舍", "accWaiparuruHallLocation": "", "accWaiparuruHallContact": "电子邮件：waiparuruhall@auckland.ac.nz，值班电话：021 989 638", "accWaiparuruHallNotes": "",
+        "courseSelectionTitle": "选课指南",
+        "courseSelectionIntro": "选课不仅仅是一张清单——这是你迈向激动人心新篇章的第一步。选择激励你的事物，相信你的直觉，并且知道我们会在这里支持你的每一步。",
+        "courseSelectionSubtitle": "怀卡托大学 Waipapa Taumata Rau 分步选课指南",
+        "courseSelPhase": "阶段", "courseSelWhatToDo": "做什么", "courseSelWhereHow": "地点/方式", "courseSelWhyMatters": "重要性",
+        "courseSelPhase1": "1 了解概况", "courseSelWhat1": "- 下载你课程/专业的学位规划师<br>- 浏览学院简介和任何“核心课程”手册", "courseSelWhere1": "学院网站 → “学位规划师”部分 (奥克兰大学)", "courseSelWhy1": "确认所有必修（核心）课程和典型顺序，以免忽略要求。",
+        "courseSelPhase2": "2 查看官方规定", "courseSelWhat2": "- 打开日历中的课程规定页面<br>- 注意学分总数、阶段 (I/II/III/PG) 规则、GPA 阈值以及任何顶点/实习论文", "courseSelWhere2": "日历 (通过 sso.auckland 或 SSO ‘课程建议和信息’) (奥克兰大学)", "courseSelWhy2": "规定高于一切；了解它们可以避免学位后期出现意外。",
+        "courseSelPhase3": "3 首先列出你的核心课程", "courseSelWhat3": "根据步骤1-2，创建每门核心课程的运行列表（课程代码 + 学分 + 先修/同修课程）", "courseSelWhere3": "简单的文档/表格；你将在步骤5中将它们拖到每个学期。", "courseSelWhy3": "让你在考虑“可有可无”的课程之前，专注于“必须完成”的课程。",
+        "courseSelPhase4": "4 审核先决条件和顺序", "courseSelWhat4": "对于每门核心课程，打开其课程大纲 → 注意先决条件、同修课程和推荐阶段。", "courseSelWhere4": "SSO“课程大纲”搜索（奥克兰大学）", "courseSelWhy4": "防止因缺少先决条件而导致的注册障碍。",
+        "courseSelPhase5": "5 制定多学期计划", "courseSelWhat5": "- 登录SSO内的课程表规划器，为来年（或整个学位，如果你愿意）创建示例课程表。<br>- 将核心课程拖入推荐的学期；用选修课或通识教育课程填补空白。", "courseSelWhere5": "SSO → 课程表规划器（奥克兰大学）", "courseSelWhy5": "可视化冲突和工作量平衡，显示所有内容是否真的合适。",
+        "courseSelPhase6": "6 与顾问确认", "courseSelWhat6": "- 发送电子邮件/访问学生中心或学院课程咨询会议；带上你的计划。", "courseSelWhere6": "AskAuckland → 课程咨询预约（奥克兰大学）", "courseSelWhy6": "工作人员可以发现隐藏的规则（例如，同类群组课程）并批准变更。",
+        "courseSelPhase7": "7 尽早注册", "courseSelWhat7": "- 使用学生在线服务 → 注册以添加课程 + 相关的实验课/辅导课。", "courseSelWhere7": "SSO → 注册向导（奥克兰大学）", "courseSelWhy7": "热门课程很快满员；核心课程名额可能会用完。",
+        "courseSelPhase8": "8 确认费用和学分", "courseSelWhat8": "- 检查费用估算和注册学分限制，以确保全日制学生身份（本科生通常每年≥100学分）。", "courseSelWhere8": "SSO财务选项卡 + 注册信息页面（奥克兰大学）", "courseSelWhy8": "维持签证/贷款资格和毕业时间表。",
+        "courseSelPhase9": "9 开学前复查", "courseSelWhat9": "- 开课前一周重新打开课程表规划器，查看教室/时间是否有变动。<br>- 如有需要，在注册变更窗口期内退课/换课。", "courseSelWhere9": "SSO → 课程表视图", "courseSelWhy9": "发现最后一刻的课程表变动，让你免费修复冲突。",
+        "proTipsTitle": "专业提示",
+        "proTip1": "将核心课程的PDF（例如商学院核心手册）加入书签，以便快速查阅政策和学习成果（奥克兰大学）。",
+        "proTip2": "为注册开始日期和无罚添加/删除的最后日期设置日历提醒。",
+        "proTip3": "保留一份备用选修课清单——当核心课程满员或推迟时非常有用。",
+        "courseSelectionOutro": "通过这个流程，你将始终首先加载核心科目，尽早核实先决条件，并在讲座开始前很久就锁定一个没有冲突的时间表。学习愉快！",
+        "atCardTitle": "AT交通卡全攻略（公共交通）",
+        "atCardWhatIs": "什么是 AT HOP 卡？",
+        "atCardWhatIsDesc": "AT HOP 卡是一种可重复使用的预付智能卡，可用于支付奥克兰的公交车、火车和大多数轮渡服务。与现金支付相比，它提供折扣票价，并为常旅客提供便利。",
+        "atCardHowToUse": "如何使用您的 AT HOP 卡",
+        "atCardTagOn": "1. 上车刷卡", "atCardTagOnLocate": "<strong>找到读卡器：</strong>进入公交车、火车站或轮渡码头时，找到 AT HOP 读卡器。", "atCardTagOnPresent": "<strong>出示您的卡：</strong>将您的 HOP 卡平放在读卡器上，直到听到哔声并看到绿灯。这表示刷卡成功。",
+        "atCardTagOff": "2. 下车刷卡", "atCardTagOffLocate": "<strong>找到出口读卡器：</strong>离开车辆或车站前，找到读卡器。", "atCardTagOffPresent": "<strong>再次出示您的卡：</strong>将您的卡平放在读卡器上，直到听到哔声并看到绿灯。这将记录您的下车信息，并确保您支付正确的票价。",
+        "atCardImportant": "重要提示：", "atCardImportantDesc": "始终使用同一张卡或设备上下车刷卡，以避免被收取默认票价。",
+        "atCardRechargeTitle": "如何为您的 AT HOP 卡充值",
+        "atCardOnlineTopUp": "在线充值",
+        "atCardOnlineStep1": "<strong>注册您的卡：</strong>创建一个 MyAT 账户并注册您的 HOP 卡。", "atCardOnlineStep2": "<strong>登录：</strong>访问您的 MyAT 账户。", "atCardOnlineStep3": "<strong>选择充值：</strong>选择您要充值的卡并选择“在线充值”。", "atCardOnlineStep4": "<strong>输入金额和付款详情：</strong>指定金额并提供您的信用卡或借记卡信息。", "atCardOnlineStep5": "<strong>确认并激活：</strong>付款后，在 60 天内到任何 AT HOP 读卡器上刷卡以激活充值。", "atCardOnlineNote": "注意：", "atCardOnlineNoteDesc": "在线充值最多可能需要 1 小时才能生效。",
+        "atCardInPersonTopUp": "人工充值",
+        "atCardInPersonRetailers": "<strong>零售商：</strong>前往 AT HOP 零售商处。", "atCardInPersonMachines": "<strong>售票和充值机：</strong>使用位于火车站和北部公交专用道的机器。", "atCardInPersonCenters": "<strong>客户服务中心：</strong>在奥克兰各地的这些中心充值。", "atCardInPersonTip": "提示：人工充值可立即生效。",
+        "atCardAutoTopUp": "自动充值",
+        "atCardAutoStep1": "<strong>设置：</strong>在您的 MyAT 账户中，选择“设置自动充值”。", "atCardAutoStep2": "<strong>配置设置：</strong>选择最低余额阈值和充值金额。", "atCardAutoStep3": "<strong>付款详情：</strong>提供您的信用卡/借记卡或银行账户信息。", "atCardAutoStep4": "<strong>激活：</strong>在 60 天内到 AT HOP 读卡器上刷卡以激活自动充值。", "atCardAutoStep5": "<strong>好处：</strong>自动充值可确保您永远不会余额不足。",
+        "atCardTertiaryConcessionTitle": "您是否有资格获得高等教育优惠？",
+        "atCardStudentCriteria": "学生标准：",
+        "atCardCriteriaFullTime": "您必须是<strong>全日制学生</strong>。", "atCardCriteriaNZQA": "已注册并就读于 NZQA 认可和批准的高等教育课程。", "atCardCriteriaATApproved": "在 AT 批准的高等教育机构学习。", "atCardCriteriaFeesFree": "有资格享受免费教育的学生也有资格。",
+        "atCardApprovedProviderCriteria": "AT批准的高等教育机构标准：",
+        "atCardProviderMinEdu": "教育部注册。", "atCardProviderNZQA": "NZQA注册（适用于PTE和TITO）。", "atCardProviderOffers": "提供NZQA批准和认证的高等教育课程。", "atCardProviderLocated": "位于奥克兰地区。", "atCardProviderSigned": "与AT签署了高等教育参与协议。", "atCardProviderAppApproved": "“应用程序批准的提供商”还被授权用于AT移动应用程序验证。",
+        "atCardDefiningFullTime": "为高等教育优惠定义“全日制学生”（基于EFTS）：",
+        "atCardDefiningFullTimeDesc": "AT使用高等教育委员会（TEC）的等效全日制学生（EFTS）值。",
+        "atCardFullTimeFullYear": "<strong>全日制/全年：</strong>在一个完整的学年中至少连续32周达到最低0.8 EFTS。", "atCardFullTimePartYear": "<strong>全日制/部分学年（学期）：</strong>在学年内至少连续16周达到最低0.4 EFTS。", "atCardLimitedFullTime": "<strong>有限全日制：</strong>符合StudyLink的定义并持有StudyLink的批准信。",
+        "atCardGettingConcession": "获取您的高等教育优惠",
+        "atCardGettingConcessionDesc": "要将高等教育优惠加载到您的AT HOP卡上，必须首先确认您的资格：",
+        "atCardStickerTitle": "AT高等教育ID贴纸",
+        "atCardStickerApplied": "贴在您的有效高等教育学生证上。", "atCardStickerIssued": "由您AT批准的高等教育机构签发。", "atCardStickerPink": "<strong>粉色贴纸：</strong>仅限第一学期。", "atCardStickerGreen": "<strong>绿色贴纸：</strong>第二学期或全年。", "atCardStickerRequires": "需要您所在机构的费用收据/证明。", "atCardStickerValid": "优惠有效期至您的学生证或贴纸过期（以先到者为准）。", "atCardStickerFullYear": "全年贴纸（如果注册至少连续32周，则于次年3月31日到期）。", "atCardStickerPartYear": "如果满足一个学期的条件（例如，16周0.4 EFTS），则为部分学年贴纸。",
+        "atCardStickerShowEligible": "在应用程序中显示“符合条件”状态（仅适用于“应用程序批准的提供商”）。", "atCardStickerConcessionUpTo": "优惠最长可达3年，具体取决于您的提供商持续进行的资格重新验证。", "atCardStickerEnrollmentChanges": "如果您的注册发生变化（例如，一个学期的EFTS低于0.4），您的提供商会通知AT，您的优惠可能会在2周通知后失效。",
+        "atCardMobileApp": "AT手机App",
+        "atCardStickerNoteTitle": "注意：", "atCardStickerNoteDesc": "如果您不就读于应用程序批准的提供商或没有兼容的智能手机，则必须使用AT高等教育ID贴纸方法。",
+        "atCardCoverageExclusions": "高等教育优惠的覆盖范围和除外情况",
+        "atCardWhatsIncluded": "包含内容：",
+        "atCardIncludedDiscount": "使用加载了高等教育优惠的AT HOP卡出行可享受折扣。", "atCardIncludedValidOn": "适用于火车以及选定的公交车和轮渡服务。", "atCardIncludedFares": "票价比成人AT HOP单程票价至少低20%。", "atCardIncludedAvailable": "适用于AT与公共交通运营商签订合同运营的服务。",
+        "atCardWhoNotEligible": "谁不符合高等教育优惠的资格：",
+        "atCardNotEligiblePartTime": "非全日制学生。", "atCardNotEligibleYouth": "参加青年保障计划、以基金会为重点的培训机会或类似政府资助课程的学生。", "atCardNotEligibleCorrespondence": "函授学习、远程学习或接受政府交通资助的学生。",
+        "atCardServiceExclusions": "高等教育优惠的服务排除项：",
+        "atCardServiceExclusionsDesc": "某些服务不包括在内。AT和运营商可以随时在计划中添加/删除路线，恕不另行通知。如有疑问，请咨询运营商。",
+        "atCardImportantConditions": "高等教育优惠的重要条件",
+        "atCardAdultFareIf": "如果您出现以下情况，将支付<strong>成人票价</strong>：",
+        "atCardAdultFareNoConcession": "您的AT HOP卡上未加载高等教育优惠。", "atCardAdultFareCannotConfirm": "无法通过AT Mobile应用程序确认资格（如果适用）。", "atCardAdultFareNoValidID": "无法出示带有有效AT高等教育ID贴纸的有效高等教育学生证。",
+        "atCardTermsRevision": "奥克兰交通局可随时修改这些条款和条件，恕不另行通知。更改在其网站上发布后立即生效。", "atCardFareSchemesReview": "AT会定期审查其优惠票价计划，这可能会导致更改。",
+        "atCardFurtherInfo": "有关高等教育优惠的更多信息",
+        "atCardFurtherInfoApplication": "有关申请流程，请访问奥克兰交通局网站上的“高等教育学生优惠”页面。", "atCardFurtherInfoOperators": "像Fullers Ferries (www.fullers.co.nz) 和 SeaLink Ferries (www.sealink.co.nz) 这样的一些运营商可能会为非AT签约的服务提供自己的高等教育折扣。", "atCardFurtherInfoShuttle": "请向您的高等教育机构查询校园穿梭巴士服务，这些服务独立于此计划运营。",
+        "atCardSummaryNote": "<em>此信息为摘要。有关完整和最新的详细信息，请参阅奥克兰交通局官方网站。</em>",
+        "irdTitle": "设置IRD号码分步指南",
+        "irdIntro": "作为学生在新西兰从事兼职工作或享受税收优惠，您需要一个IRD号码（税务局号码）。这个唯一的标识符对于税务目的是必不可少的，可确保您被正确征税并能获得应享权利。以下是帮助您设置IRD号码的综合指南：",
+        "irdStep1Title": "步骤1：确定您的申请类别",
+        "irdStep1Cat1": "<strong>新西兰新入境者：</strong>如果您最近抵达并且在签证规定的时间范围内，请以“新入境者”身份申请。", "irdStep1Cat2": "<strong>居住在新西兰但非新入境者：</strong>如果您在新西兰居住的时间已超过签证的抵达日期，或者是新西兰公民/居民，请使用此类别。", "irdStep1Cat3": "<strong>居住在海外：</strong>如果您在抵达新西兰之前申请，则属于此类别。",
+        "irdStep2Title": "步骤2：收集所需文件",
+        "irdStep2Desc": "根据您的申请类别，您将需要：",
+        "irdStep2Doc1": "<strong>带照片的身份证明：</strong>有效的护照或其他批准的身份证件。", "irdStep2Doc2": "<strong>地址证明：</strong>例如水电费账单或租赁协议。", "irdStep2Doc3": "<strong>签证详情：</strong>您的新西兰移民局申请号。", "irdStep2Doc4": "<strong>税务识别号（TIN）：</strong>来自您的祖国（如果适用）。", "irdStep2Doc5": "<strong>新西兰银行账户：</strong>功能齐全的账户证明或已完成的客户尽职调查（IR997表格）。",
+        "irdStep2TranslationNote": "确保所有文件均为英文或附有经认证的翻译件。",
+        "irdStep3Title": "步骤3：提交您的申请",
+        "irdStep3OnlineTitle": "在线申请：", "irdStep3OnlineDesc": "通过税务局网站对应您的类别进行申请：",
+        "irdStep3OnlineCat1": "新西兰新入境者", "irdStep3OnlineCat2": "居住在新西兰但非新入境者", "irdStep3OnlineCat3": "居住在海外",
+        "irdStep3InPerson": "<strong>亲自验证：</strong>如果以“居住在新西兰但非新入境者”身份申请，在线提交后，请在60天内携带原始文件前往AA驾照代理机构进行身份验证。", "irdStep3Email": "<strong>邮件提交：</strong>如果从海外申请，请填写IR742表格，并通过电子邮件将其与扫描文件发送至 [电子邮件保护]",
+        "irdStep4Title": "步骤4：接收您的IRD号码",
+        "irdStep4Desc": "成功申请和验证后：",
+        "irdStep4Processing": "<strong>处理时间：</strong>如果在线申请，通常在2个工作日内；通过邮寄则最多需要10个工作日。", "irdStep4Delivery": "<strong>递送：</strong>您将通过电子邮件、短信或邮寄方式收到您的IRD号码，具体取决于您选择的方式。",
+        "bankAccountTitle": "如何开设银行账户的详细说明",
+        "bankAccountIntro": "在新西兰开设学生银行账户是您在学习期间管理财务的基本步骤。它使您能够处理学费支付、从家里接收资金、支付日常开支，甚至通过兼职工作赚取收入。此外，拥有本地银行账户有助于您避免国际交易费用并简化汇款。",
+        "bankAccountGuideDesc": "本指南提供详细的分步说明，帮助您在新西兰开设学生银行账户，确保过程顺利高效。",
+        "bankAccountPopularTitle": "新西兰热门学生银行账户",
+        "bankAccountPopularDesc": "以下是一些提供学生友好型账户的银行：",
+        "bankAccountANZ": "ANZ Jumpstart 账户", "bankAccountWestpac": "Westpac 国际学生账户", "bankAccountASB": "ASB 高等教育账户/ ASB 国际学生账户", "bankAccountBNZ": "BNZ YouMoney 账户", "bankAccountKiwibank": "Kiwibank FreeUp 账户",
+        "bankAccountNeededTitle": "开设学生银行账户需要什么",
+        "bankAccountNeededDesc": "新西兰大多数银行要求以下文件：",
+        "bankAccountNeededDoc1": "<strong>有效护照：</strong>作为您的主要身份证明。", "bankAccountNeededDoc2": "<strong>学生签证：</strong>通常需要有效期至少六个月的签证。", "bankAccountNeededDoc3": "<strong>入学证明：</strong>例如您的录取通知书或学生证。", "bankAccountNeededDoc4": "<strong>新西兰地址证明：</strong>可以是租赁协议、水电费账单或您所在机构确认您居住地的信函。", "bankAccountNeededDoc5": "<strong>税务识别号：</strong>来自您的祖国和/或您的新西兰IRD（税务局）号码。",
+        "bankAccountStepsTitle": "开设学生银行账户的步骤",
+        "bankAccountStep1Choose": "选择银行：", "bankAccountStep1ChooseDesc": "研究提供学生账户的银行并比较其特点。",
+        "bankAccountStep2Apply": "在线或分行申请：",
+        "bankAccountStep2OnlineTitle": "在线：", "bankAccountStep2OnlineDesc": "一些银行允许您在线开始申请流程，甚至在抵达新西兰之前。", "bankAccountStep2InBranchTitle": "分行：", "bankAccountStep2InBranchDesc": "携带您的文件前往当地分行。建议提前预约。",
+        "bankAccountStep3Complete": "完成申请：", "bankAccountStep3CompleteDesc": "填写必要的表格并提供您的文件。", "bankAccountStep4Activate": "激活您的账户：", "bankAccountStep4ActivateDesc": "获得批准后，您将收到您的账户详细信息和借记卡。",
+        "realmeTitle": "如何创建RealMe账户",
+        "realmeIntro": "请访问以下链接：", "realmeLinkText": "RealMe - 登录",
+        "realmeFollowSteps": "请按照以下步骤创建您的RealMe个人资料：",
+        "realmeStep1": "选择创建您的RealMe登录名。", "realmeStep2": "通过以下方式设置您的RealMe账户：",
+        "realmeStep2Email": "提供您的电子邮件地址", "realmeStep2Username": "提供用户名", "realmeStep2Password": "提供密码", "realmeStep2Security": "选择3个安全问题并提供答案", "realmeStep2Captcha": "证明您是人类 – 输入您在图片中看到的字符。",
+        "realmeStep3": "接受使用条款并选择继续。", "realmeStep4": "接受账户安全免责声明以创建您的移民在线个人资料。", "realmeStep5": "您将被重定向到移民在线页面。输入显示名称（可以与您的RealMe用户名不同）和您的电子邮件地址。", "realmeStep6": "选择同意并继续。", "realmeStep7": "您将收到2封电子邮件：",
+        "realmeStep7Email1": "一封来自RealMe的电子邮件，告知您注册成功，以及", "realmeStep7Email2": "一封来自移民在线的电子邮件，用于验证您的账户。", "realmeStep7Spam": "如果您没有收到电子邮件，请检查您的垃圾邮件文件夹。",
+        "realmeStep8": "在来自移民在线的电子邮件中选择验证链接以激活您的账户。然后按照提供的链接验证您的账户。", "realmeStep9": "选择查看我的账户，然后选择访客签证以完成在线申请表。", "realmeStep10": "完成在线账户创建过程后，您可能会收到一封电子邮件，提及您需要在15天内前往最近的AA中心拍照，以匹配您的Realme个人资料。（请务必记下电子邮件中的代码，因为您在AA中心会需要它作为参考）", "realmeStep11": "照片处理完毕后，您将在10天内收到一封电子邮件，告知您的Realme账户已创建。",
+        "campusTravelTitle": "校区间交通", "mapPlaceholderOverview": "[City, Grafton 和 Newmarket 校区总览图]",
+        "walking": "步行：", "bus": "公交车：",
+        "campusTravelCityGraftonTitle": "City &harr; Grafton：", "campusTravelCityGraftonWalk": "约1.3公里，约15分钟。", "campusTravelCityGraftonBus": "InnerLink (INN) 提供校区间的直达服务。",
+        "campusTravelCityNewmarketTitle": "City &harr; Newmarket：", "campusTravelCityNewmarketWalk": "约2公里，约30分钟。", "campusTravelCityNewmarketBus": "70路和75路公交车提供直达连接。",
+        "campusTravelGraftonNewmarketTitle": "Grafton &harr; Newmarket：", "campusTravelGraftonNewmarketWalk": "约1.1公里，约20分钟。", "campusTravelGraftonNewmarketBus": "70路和75路公交车提供这些校区间的服务。",
+        "campusTravelRealTime": "<em>如需实时时刻表和路线规划，请考虑使用奥克兰交通行程规划器或谷歌地图应用程序。</em>",
+        "campusTravelKeyBusStops": "主要公交车站", "campusTravelCityCampusStops": "City 校区（主校区）",
+        "campusTravelStopUOA": "奥克兰大学（站号：1096）：", "campusTravelStopUOALocation": "地点：12 Grafton Road，毗邻 City 校区。", "campusTravelStopUOARoutes": "公交线路：25B, 76, NX2, OUT, 101, 321, 27H, 27T, 27W, 70, 72X, 931, 933, 939。",
+        "campusTravelStopAuckUni": "奥克兰大学（站号：7147）：", "campusTravelStopAuckUniLocation": "地点：Symonds Street，紧邻 City 校区。", "campusTravelStopAuckUniRoutes": "公交线路：22N, 22R, 24B, 24R, 25L, 27H, 27T, 27W, 70, 82, NX2, 802, 923, 924。",
+        "campusTravelStopWaterloo": "Waterloo Quadrant（站号：7144）：", "campusTravelStopWaterlooLocation": "地点：距离 City 校区约5分钟步行路程。", "campusTravelStopWaterlooRoutes": "公交线路：25B, 70, INN, OUT, 27H, 27T, 27W, 321, MEX, 72X, 931, 933, 939, 755。",
+        "campusTravelGraftonCampusStops": "Grafton 校区",
+        "campusTravelStopParkRd": "Park Road / 奥克兰市医院：", "campusTravelStopParkRdLocation": "地点：距离 Grafton 校区约3分钟步行路程。", "campusTravelStopParkRdRoutes": "公交线路：30, 309, 321, 75, 866, INN (InnerLink), RBW (西部铁路巴士)。",
+        "campusTravelNewmarketCampusStops": "Newmarket 校区",
+        "campusTravelStopMelrose": "Melrose Street：", "campusTravelStopMelroseLocation": "地点：距离 Newmarket 校区约2分钟步行路程。", "campusTravelStopMelroseRoutes": "公交线路：INN (InnerLink), 30, 64, 70, 75。",
+        "campusTravelStopKhyber": "Khyber Pass Road / Mountain Road：", "campusTravelStopKhyberLocation": "地点：距离 Newmarket 校区约4分钟步行路程。", "campusTravelStopKhyberRoutes": "公交线路：N10。",
+        "linksTitle": "链接：", "linksAllMaps": "1. 所有地图：", "linksParkingInfo": "2. 停车信息：",
+        "cityCampusTitle": "City 校区地图和名录", "mapPlaceholderCity": "[City 校区详细地图]",
+        "cityCampusDirectoryTitle": "主要地点/名录 (City 校区)", "cityCampusDirectoryNote": "<em>（注意：这只是部分列表。完整列表请参阅原始PDF。）</em>",
+        "cityCampusParkingTitle": "奥克兰大学学生停车快速指南", "cityCampusParkingOGGB": "City 校区（Owen G. Glenn 大楼 - OGGB）",
+        "location": "地点：", "cityCampusParkingLocation": "通过 Grafton Road 进入（Stanley Street 对面）", "availability": "可用性：", "cityCampusParkingAvailability": "5个停车层，超过1000个车位", "hours": "时间：", "cityCampusParkingHoursWeekdays": "工作日：早上6:30 – 晚上11:30", "cityCampusParkingHoursWeekends": "周末：早上7:00 – 晚上11:00", "cityCampusParkingHoursClosed": "公共假期关闭", "casualRates": "临时费率：", "cityCampusParkingRate1": "每小时5纽币（最多5小时）", "cityCampusParkingRate2": "统一费率25纽币（5小时以上，周一至周五下午4:30前）", "cityCampusParkingRate3": "统一费率6纽币（工作日下午4:30后/周末全天）", "payment": "支付方式：", "cityCampusParkingPayment": "在电梯附近的缴费机支付。凭票出场。接受EFTPOS（信用卡手续费1.9%）。遗失票据收费25纽币。",
+        "mapPlaceholderCityRestaurants": "[City 校区餐厅地图]", "cityCampusRestaurantsNote": "美食广场。步行15分钟即可到达市中心，那里有更多餐厅。",
+        "graftonCampusTitle": "Grafton 校区地图和名录", "mapPlaceholderGrafton": "[Grafton 校区地图]",
+        "graftonCampusDirectoryTitle": "名录 (Grafton 校区)", "graftonCampusDirectoryNote": "<em>（完整列表请参阅原始PDF。）</em>",
+        "newmarketCampusTitle": "Newmarket 校区地图和名录", "mapPlaceholderNewmarket": "[Newmarket 校区地图]",
+        "newmarketCampusDirectoryTitle": "名录 (Newmarket 校区)", "newmarketCampusDirectoryNote": "<em>（完整列表请参阅原始PDF。）</em>",
+        "printerLocationsTitle": "打印机位置",
+        "printerLocationsDesc": "校园内的学习空间、图书馆和学生宿舍均提供能够打印、复印和扫描的多功能一体机。",
+        "printingGuideTitle": "奥克兰大学打印指南（学生版）",
+        "printingHowToPrint": "如何打印",
+        "printingHowToLogin": "<strong>登录：</strong>使用您的校园卡或学生邮箱和密码。", "printingHowToFunds": "<strong>资金：</strong>确保您的大学打印账户中有足够余额。", "printingHowToLocations": "<strong>地点：</strong>（如上所述）。",
+        "printingFromPersonal": "从个人设备打印", "printingWebPrintService": "网络打印服务：",
+        "printingWebPrintStep1": "访问 papercut.auckland.ac.nz 并登录。", "printingWebPrintStep2": "从菜单中选择“网络打印”。", "printingWebPrintStep3": "点击“提交作业”。", "printingWebPrintStep4": "选择“FollowMe-BW (虚拟)”或“FollowMe-Colour (虚拟)”作为您的打印机。", "printingWebPrintStep5": "按照提示上传您的文档，并通过使用校园卡或凭据登录在任何打印机上释放打印作业。",
+        "printingCosts": "打印费用",
+        "printingCostBW": "<strong>黑白：</strong>A4/A3：每页0.10纽币。双面：每页0.20纽币。", "printingCostColour": "<strong>彩色：</strong>A4/A3：每页0.20纽币。双面：每页0.40纽币。",
+        "printingAddingFunds": "为您的打印账户充值",
+        "printingFundsEpos": "<strong>ePOS 充值点：</strong>位于校园内，包括0层案例室3外。", "printingFundsOnline": "<strong>在线转账：</strong>通过您的 NetAccount 将资金从“复印余额”转至“打印余额”。",
+        "footerText": "&copy; KitUp - 大学欢迎礼包。信息来源于提供的PDF文件。"
+    }
+    </script>
+
+    <script>
+        // Store for loaded translations to avoid re-fetching
+        const loadedTranslations = {};
+
+        // Function to fetch translation data (simulated)
+        async function fetchTranslations(lang) {
+            if (loadedTranslations[lang]) {
+                return loadedTranslations[lang];
+            }
+            try {
+                const jsonDataElement = document.getElementById(`translations-${lang}`);
+                if (!jsonDataElement) {
+                    console.error(`Translation data for ${lang} not found.`);
+                    // Fallback to English if the requested language data isn't found
+                    const fallbackDataElement = document.getElementById(`translations-en`);
+                    if (fallbackDataElement) {
+                        const fallbackData = JSON.parse(fallbackDataElement.textContent);
+                        loadedTranslations[lang] = fallbackData; // Store under requested lang key to avoid re-fetch
+                        return fallbackData;
+                    }
+                    return {}; // Should not happen if 'en' is always present
+                }
+                const data = JSON.parse(jsonDataElement.textContent);
+                loadedTranslations[lang] = data;
+                return data;
+            } catch (error) {
+                console.error(`Could not load translations for ${lang}:`, error);
+                const fallbackDataElement = document.getElementById(`translations-en`);
+                 if (fallbackDataElement) {
+                    return JSON.parse(fallbackDataElement.textContent);
+                }
+                return {};
+            }
+        }
+
+        // Function to apply translations to the page
+        function applyTranslations(translations) {
+            if (!translations || Object.keys(translations).length === 0) {
+                console.warn("No translations to apply or translations object is empty.");
+                return;
+            }
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[key] !== undefined) { // Check if key exists
+                    element.innerHTML = translations[key];
+                } else {
+                    // console.warn(`Translation key "${key}" not found for current language.`);
+                    // Optionally, leave the English text or a placeholder if a key is missing
+                }
+            });
+        }
+
+        // Function to switch language
+        async function switchLanguage(lang) {
+            const translations = await fetchTranslations(lang);
+            if (translations) {
+                applyTranslations(translations);
+                document.documentElement.lang = lang; // Set the lang attribute on HTML element
+
+                document.querySelectorAll('#languageSwitcher button').forEach(button => {
+                    button.classList.remove('active');
+                });
+                const activeButton = document.querySelector(`#languageSwitcher button[onclick="switchLanguage('${lang}')"]`);
+                if (activeButton) {
+                    activeButton.classList.add('active');
+                }
+            }
+        }
+
+        // Load default language on page load
+        document.addEventListener('DOMContentLoaded', async () => {
+            const preferredLang = 'en'; // Default to English
+            await switchLanguage(preferredLang);
+        });
+    </script>
+
+</body>
+</html>
